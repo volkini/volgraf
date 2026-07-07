@@ -322,12 +322,20 @@
       <form id="admin-form" class="flex flex-col gap-4">
         <input type="hidden" id="f-id" value="" />
         <div>
-          <label for="f-name" class="mb-1 block font-mono text-[10px] uppercase tracking-[0.2em] text-faint" data-i18n="admin.name">Project Name</label>
-          <input id="f-name" type="text" required class="w-full border border-line bg-ink px-3 py-2 text-sm text-white placeholder:text-faint focus:border-accent focus:outline-none" />
+          <label for="f-name-en" class="mb-1 block font-mono text-[10px] uppercase tracking-[0.2em] text-faint" data-i18n="admin.nameEn">Project Name — English</label>
+          <input id="f-name-en" type="text" class="w-full border border-line bg-ink px-3 py-2 text-sm text-white placeholder:text-faint focus:border-accent focus:outline-none" />
         </div>
         <div>
-          <label for="f-desc" class="mb-1 block font-mono text-[10px] uppercase tracking-[0.2em] text-faint" data-i18n="admin.desc">Description</label>
-          <textarea id="f-desc" rows="4" required class="w-full border border-line bg-ink px-3 py-2 text-sm text-white placeholder:text-faint focus:border-accent focus:outline-none"></textarea>
+          <label for="f-name-tr" class="mb-1 block font-mono text-[10px] uppercase tracking-[0.2em] text-faint" data-i18n="admin.nameTr">Project Name — Turkish (optional)</label>
+          <input id="f-name-tr" type="text" class="w-full border border-line bg-ink px-3 py-2 text-sm text-white placeholder:text-faint focus:border-accent focus:outline-none" />
+        </div>
+        <div>
+          <label for="f-desc-en" class="mb-1 block font-mono text-[10px] uppercase tracking-[0.2em] text-faint" data-i18n="admin.descEn">Description — English</label>
+          <textarea id="f-desc-en" rows="3" class="w-full border border-line bg-ink px-3 py-2 text-sm text-white placeholder:text-faint focus:border-accent focus:outline-none"></textarea>
+        </div>
+        <div>
+          <label for="f-desc-tr" class="mb-1 block font-mono text-[10px] uppercase tracking-[0.2em] text-faint" data-i18n="admin.descTr">Description — Turkish (optional)</label>
+          <textarea id="f-desc-tr" rows="3" class="w-full border border-line bg-ink px-3 py-2 text-sm text-white placeholder:text-faint focus:border-accent focus:outline-none"></textarea>
         </div>
         <div>
           <label for="f-img" class="mb-1 block font-mono text-[10px] uppercase tracking-[0.2em] text-faint" data-i18n="admin.imageUrl">Image URL</label>
@@ -399,32 +407,59 @@
     // The /*SEED_START*/ and /*SEED_END*/ markers are used by the
     // "Download publish-ready index.html" button in the admin panel
     // to swap this list with your current projects. Do not remove them.
+    //
+    // "name" and "description" can be either a plain string (same text
+    // in both languages) or an object { en: "...", tr: "..." }.
     SEED_PROJECTS: /*SEED_START*/[
       {
         id: "vg-001",
-        name: "Low-Friction Golf Tee",
-        description: "Parametric consumer product designed around a low-friction crown geometry. Fully-constrained model with configurable height and cup diameter, drafted and tolerated for single-cavity injection molding.",
+        name: {
+          en: "Low-Friction Golf Tee",
+          tr: "Düşük Sürtünmeli Golf Tee'si"
+        },
+        description: {
+          en: "Parametric consumer product designed around a low-friction crown geometry. Fully-constrained model with configurable height and cup diameter, drafted and tolerated for single-cavity injection molding.",
+          tr: "Düşük sürtünmeli taç geometrisi etrafında tasarlanmış parametrik tüketici ürünü. Yükseklik ve çanak çapı ayarlanabilir, tam kısıtlı model; tek gözlü enjeksiyon kalıbı için eğim ve tolerans verildi."
+        },
         imageUrl: "https://placehold.co/1200x800/131316/FF6B1A?text=Low-Friction+Golf+Tee",
         tags: ["Consumer Product", "Injection Molding", "Parametric CAD"]
       },
       {
         id: "vg-002",
-        name: "Respiratory Training Device",
-        description: "Handheld breathing trainer with a 3-stage resistance insert. Interchangeable orifice cartridges give three calibrated resistance levels; designed for easy cleaning, safe materials, and low-cost assembly.",
+        name: {
+          en: "Respiratory Training Device",
+          tr: "Solunum Egzersiz Cihazı"
+        },
+        description: {
+          en: "Handheld breathing trainer with a 3-stage resistance insert. Interchangeable orifice cartridges give three calibrated resistance levels; designed for easy cleaning, safe materials, and low-cost assembly.",
+          tr: "3 kademeli direnç kartuşlu, el tipi nefes egzersiz cihazı. Değiştirilebilir orifis kartuşları üç kalibre direnç seviyesi sunar; kolay temizlik, güvenli malzeme ve düşük maliyetli montaj için tasarlandı."
+        },
         imageUrl: "https://placehold.co/1200x800/131316/FF6B1A?text=Respiratory+Trainer",
         tags: ["Medical", "3D Printing", "DFM"]
       },
       {
         id: "vg-003",
-        name: "Automotive Cargo Stabilizer",
-        description: "Telescoping aluminum system that clamps between trunk walls to keep cargo in place. Extruded profiles with machined end fittings, over-center locking mechanism, and rubber contact pads sized for common trunk widths.",
+        name: {
+          en: "Automotive Cargo Stabilizer",
+          tr: "Araç Bagaj Sabitleyici"
+        },
+        description: {
+          en: "Telescoping aluminum system that clamps between trunk walls to keep cargo in place. Extruded profiles with machined end fittings, over-center locking mechanism, and rubber contact pads sized for common trunk widths.",
+          tr: "Bagaj duvarları arasına sıkışarak yükü sabitleyen teleskopik alüminyum sistem. Ekstrüzyon profiller, talaşlı imalat uç bağlantıları, mafsallı kilit mekanizması ve yaygın bagaj genişliklerine göre boyutlandırılmış kauçuk temas pedleri."
+        },
         imageUrl: "https://placehold.co/1200x800/131316/FF6B1A?text=Cargo+Stabilizer",
         tags: ["Automotive", "Aluminum Extrusion", "Mechanism Design"]
       },
       {
         id: "vg-004",
-        name: "Sliding Camera Cover Phone Case",
-        description: "Slim phone case with an integrated sliding privacy cover for the camera array. Printed in MJF nylon (PA12) with living-rail slide geometry tuned for consistent detent feel across print orientations.",
+        name: {
+          en: "Sliding Camera Cover Phone Case",
+          tr: "Sürgülü Kamera Kapaklı Telefon Kılıfı"
+        },
+        description: {
+          en: "Slim phone case with an integrated sliding privacy cover for the camera array. Printed in MJF nylon (PA12) with living-rail slide geometry tuned for consistent detent feel across print orientations.",
+          tr: "Kamera grubu için entegre sürgülü gizlilik kapağı olan ince telefon kılıfı. MJF naylon (PA12) ile basıldı; ray geometrisi, farklı baskı yönlerinde tutarlı kademe hissi verecek şekilde ayarlandı."
+        },
         imageUrl: "https://placehold.co/1200x800/131316/FF6B1A?text=Camera+Cover+Case",
         tags: ["MJF Nylon", "Additive Manufacturing", "Consumer Product"]
       }
@@ -468,8 +503,11 @@
       "wa.label": "Chat on WhatsApp",
       "admin.title": "Admin — Projects",
       "admin.close": "Close admin panel",
-      "admin.name": "Project Name",
-      "admin.desc": "Description",
+      "admin.nameEn": "Project Name — English",
+      "admin.nameTr": "Project Name — Turkish (optional)",
+      "admin.descEn": "Description — English",
+      "admin.descTr": "Description — Turkish (optional)",
+      "admin.needName": "Enter a project name in at least one language.",
       "admin.imageUrl": "Image URL",
       "admin.tags": "Tags (comma-separated)",
       "admin.save": "Save Project",
@@ -523,8 +561,11 @@
       "wa.label": "WhatsApp'tan yazın",
       "admin.title": "Yönetim — Projeler",
       "admin.close": "Yönetim panelini kapat",
-      "admin.name": "Proje Adı",
-      "admin.desc": "Açıklama",
+      "admin.nameEn": "Proje Adı — İngilizce",
+      "admin.nameTr": "Proje Adı — Türkçe (isteğe bağlı)",
+      "admin.descEn": "Açıklama — İngilizce",
+      "admin.descTr": "Açıklama — Türkçe (isteğe bağlı)",
+      "admin.needName": "En az bir dilde proje adı girin.",
       "admin.imageUrl": "Görsel URL",
       "admin.tags": "Etiketler (virgülle ayrılmış)",
       "admin.save": "Projeyi Kaydet",
@@ -588,12 +629,37 @@
     }
   }
 
+  /* --- Localized fields ---------------------------------------
+     Project "name" and "description" can be a plain string (same
+     text in both languages) or an object { en: "...", tr: "..." }.
+     loc()          -> picks the text for the current language,
+                       falling back to the other language.
+     normalizeLoc() -> collapses form/import input to the smallest
+                       shape (string if only one language given). */
+  function loc(v) {
+    if (v && typeof v === "object") return v[currentLang] || v.en || v.tr || "";
+    return v || "";
+  }
+
+  function normalizeLoc(v) {
+    if (v && typeof v === "object") {
+      const en = String(v.en || "").trim();
+      const tr = String(v.tr || "").trim();
+      if (en && tr) return { en, tr };
+      return en || tr;
+    }
+    return String(v || "").trim();
+  }
+
+  function isLocValue(v) {
+    return typeof v === "string" ||
+      (v && typeof v === "object" && (typeof v.en === "string" || typeof v.tr === "string"));
+  }
+
   /* Basic shape check used by Import JSON */
   function isValidProjectArray(data) {
     return Array.isArray(data) && data.every(p =>
-      p && typeof p === "object" &&
-      typeof p.name === "string" &&
-      typeof p.description === "string"
+      p && typeof p === "object" && isLocValue(p.name) && isLocValue(p.description)
     );
   }
 
@@ -601,8 +667,8 @@
   function normalizeProject(p) {
     return {
       id: typeof p.id === "string" && p.id ? p.id : "vg-" + Date.now() + "-" + Math.floor(Math.random() * 1e4),
-      name: String(p.name || "").trim(),
-      description: String(p.description || "").trim(),
+      name: normalizeLoc(p.name),
+      description: normalizeLoc(p.description),
       imageUrl: String(p.imageUrl || "").trim() || "https://placehold.co/1200x800/131316/FF6B1A?text=Volgraf",
       tags: Array.isArray(p.tags) ? p.tags.map(x => String(x).trim()).filter(Boolean) : []
     };
@@ -633,13 +699,13 @@
               class="reveal card-hover group block overflow-hidden border border-line bg-panel text-left"
               aria-haspopup="dialog">
         <div class="overflow-hidden border-b border-line">
-          <img src="${esc(p.imageUrl)}" alt="${esc(p.name)}" loading="lazy"
+          <img src="${esc(p.imageUrl)}" alt="${esc(loc(p.name))}" loading="lazy"
                class="card-img aspect-[3/2] w-full object-cover"
                onerror="this.onerror=null;this.src='https://placehold.co/1200x800/131316/FF6B1A?text=Volgraf';" />
         </div>
         <div class="p-5">
-          <h3 class="font-display text-lg font-medium text-white group-hover:text-accent transition-colors">${esc(p.name)}</h3>
-          <p class="mt-1.5 line-clamp-2 text-sm text-faint">${esc(p.description)}</p>
+          <h3 class="font-display text-lg font-medium text-white group-hover:text-accent transition-colors">${esc(loc(p.name))}</h3>
+          <p class="mt-1.5 line-clamp-2 text-sm text-faint">${esc(loc(p.description))}</p>
           <div class="mt-4 flex flex-wrap gap-1.5">
             ${(p.tags || []).map(tag =>
               `<span class="border border-line px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-faint">${esc(tag)}</span>`
@@ -668,7 +734,7 @@
 
     list.innerHTML = projects.map(p => `
       <li class="flex items-center justify-between gap-3 border border-line bg-panel px-3 py-2">
-        <span class="truncate text-sm text-white">${esc(p.name)}</span>
+        <span class="truncate text-sm text-white">${esc(loc(p.name))}</span>
         <span class="flex shrink-0 gap-2">
           <button type="button" data-edit="${esc(p.id)}" class="font-mono text-[10px] uppercase tracking-[0.12em] text-body hover:text-accent">${esc(t("admin.edit"))}</button>
           <button type="button" data-delete="${esc(p.id)}" class="font-mono text-[10px] uppercase tracking-[0.12em] text-body hover:text-accent">${esc(t("admin.delete"))}</button>
@@ -693,9 +759,9 @@
     if (!project) return;
 
     document.getElementById("modal-img").src = project.imageUrl;
-    document.getElementById("modal-img").alt = project.name;
-    document.getElementById("modal-title").textContent = project.name;
-    document.getElementById("modal-desc").textContent = project.description;
+    document.getElementById("modal-img").alt = loc(project.name);
+    document.getElementById("modal-title").textContent = loc(project.name);
+    document.getElementById("modal-desc").textContent = loc(project.description);
     document.getElementById("modal-tags").innerHTML = (project.tags || []).map(tag =>
       `<span class="border border-line px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.12em] text-accent">${esc(tag)}</span>`
     ).join("");
@@ -736,7 +802,7 @@
     adminEl.classList.remove("translate-x-full");
     adminEl.setAttribute("aria-hidden", "false");
     renderAdminList();
-    document.getElementById("f-name").focus();
+    document.getElementById("f-name-en").focus();
   }
   function closeAdmin() {
     adminOpen = false;
@@ -753,12 +819,22 @@
     const editingId = document.getElementById("f-id").value;
     const entry = normalizeProject({
       id: editingId || undefined,
-      name: document.getElementById("f-name").value,
-      description: document.getElementById("f-desc").value,
+      name: {
+        en: document.getElementById("f-name-en").value,
+        tr: document.getElementById("f-name-tr").value
+      },
+      description: {
+        en: document.getElementById("f-desc-en").value,
+        tr: document.getElementById("f-desc-tr").value
+      },
       imageUrl: document.getElementById("f-img").value,
       tags: document.getElementById("f-tags").value.split(",")
     });
-    if (!entry.name) return;
+    if (!entry.name) {
+      alert(t("admin.needName"));
+      document.getElementById("f-name-en").focus();
+      return;
+    }
 
     const projects = loadProjects();
     const idx = projects.findIndex(p => p.id === editingId);
@@ -774,14 +850,19 @@
   function startEdit(id) {
     const project = loadProjects().find(p => p.id === id);
     if (!project) return;
+    // Single-language projects load into the English fields.
+    const name = typeof project.name === "object" ? project.name : { en: project.name, tr: "" };
+    const desc = typeof project.description === "object" ? project.description : { en: project.description, tr: "" };
     document.getElementById("f-id").value = project.id;
-    document.getElementById("f-name").value = project.name;
-    document.getElementById("f-desc").value = project.description;
+    document.getElementById("f-name-en").value = name.en || "";
+    document.getElementById("f-name-tr").value = name.tr || "";
+    document.getElementById("f-desc-en").value = desc.en || "";
+    document.getElementById("f-desc-tr").value = desc.tr || "";
     document.getElementById("f-img").value = project.imageUrl;
     document.getElementById("f-tags").value = (project.tags || []).join(", ");
     document.getElementById("f-save").textContent = t("admin.update");
     document.getElementById("f-cancel").classList.remove("hidden");
-    document.getElementById("f-name").focus();
+    document.getElementById("f-name-en").focus();
   }
 
   function resetAdminForm() {
@@ -981,10 +1062,13 @@
     // Footer year
     document.getElementById("footer-year").textContent = new Date().getFullYear();
 
-    // Restore language (falls back to CONFIG.DEFAULT_LANG)
+    // Language priority: 1) the visitor's saved choice, 2) Turkish
+    // if their browser is set to Turkish (covers visitors from
+    // Turkey), 3) CONFIG.DEFAULT_LANG. Also renders projects.
     let savedLang = null;
     try { savedLang = localStorage.getItem(CONFIG.STORAGE_KEYS.lang); } catch (_) {}
-    applyLanguage(savedLang || CONFIG.DEFAULT_LANG); // also renders projects
+    const browserTr = (navigator.language || "").toLowerCase().startsWith("tr") ? "tr" : null;
+    applyLanguage(savedLang || browserTr || CONFIG.DEFAULT_LANG);
 
     // Admin via URL parameter: yoursite.com/?admin=1
     if (new URLSearchParams(location.search).get("admin") === "1") openAdmin();
