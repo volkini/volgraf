@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Projects — Mechanical Design Portfolio"
+description: >-
+  All mechanical design projects by Volkan Cakir: consumer products, medical
+  devices, automotive parts, CNC and 3D-printed designs with DFM in mind.
+permalink: /projects/
+---
+<section class="mx-auto max-w-6xl px-5 py-14 md:py-20">
+  <header class="reveal mb-10 border border-line bg-panel">
+    <div class="flex flex-wrap divide-x divide-line border-b border-line font-mono text-[10px] uppercase tracking-[0.2em] text-faint">
+      <span class="px-3 py-1.5">DWG NO. VG-IDX-01</span>
+      <span class="px-3 py-1.5">DATE {{ site.time | date: "%Y-%m" }}</span>
+      <span class="px-3 py-1.5">QTY {{ site.projects | size }}</span>
+    </div>
+    <div class="px-4 py-4">
+      <h1 class="font-display text-2xl font-medium text-white md:text-3xl" data-i18n="list.title">All Projects</h1>
+      <p class="mt-1 text-sm text-faint" data-i18n="list.subtitle">Design case studies and manufacturing-ready work.</p>
+    </div>
+  </header>
+
+  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {% assign all = site.projects | sort: "date" | reverse %}
+    {% for p in all %}
+      {% include project-card.html project=p %}
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+layout: default
+title: "3D Print Files — Buy Manufacturing-Ready Designs"
+description: >-
+  Manufacturing-ready 3D print files (STL/STEP) by mechanical design engineer
+  Volkan Cakir. Tested, printable designs available for purchase.
+permalink: /shop/
+---
+<section class="mx-auto max-w-6xl px-5 py-14 md:py-20">
+  <header class="reveal mb-10 border border-line bg-panel">
+    <div class="flex flex-wrap divide-x divide-line border-b border-line font-mono text-[10px] uppercase tracking-[0.2em] text-faint">
+      <span class="px-3 py-1.5">DWG NO. VG-SHP-01</span>
+      <span class="px-3 py-1.5">DATE {{ site.time | date: "%Y-%m" }}</span>
+      <span class="px-3 py-1.5 text-accent" data-i18n="badge.shop">For sale</span>
+    </div>
+    <div class="px-4 py-4">
+      <h1 class="font-display text-2xl font-medium text-white md:text-3xl" data-i18n="shop.title">3D Print Files</h1>
+      <p class="mt-1 text-sm text-faint" data-i18n="shop.subtitle">Manufacturing-ready design files available for purchase.</p>
+    </div>
+  </header>
+
+  {% assign items = site.projects | where: "category", "shop" | sort: "date" | reverse %}
+  {% if items and items != empty %}
+  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {% for p in items %}
+      {% include project-card.html project=p %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="font-mono text-sm text-faint">Coming soon.</p>
+  {% endif %}
+</section>

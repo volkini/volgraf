@@ -1,2 +1,6 @@
-# Machine-local Claude Code settings (do not share between computers)
-.claude/settings.local.json
+# Machine-local Claude Code files (do not share between computers)
+.claude/
+
+# Jekyll build output (if you ever run Jekyll locally)
+_site/
+.jekyll-cache/

@@ -1,0 +1,39 @@
+# ============================================================
+# Volgraf — Jekyll configuration (built automatically by GitHub Pages)
+# Edit site-wide settings here.
+# ============================================================
+title: Volgraf
+tagline: Mechanical Design Engineer
+description: >-
+  Portfolio of Volkan Cakir, mechanical design engineer. CAD design, DFM,
+  CNC machining, aluminum extrusion and manufacturing-ready 3D print files.
+url: "https://volkini.github.io"
+baseurl: "/volgraf"
+lang: en
+
+author:
+  name: Volkan Cakir
+
+# WhatsApp contact (digits only, international format)
+whatsapp: "905435209120"
+whatsapp_message: "Hi Volkan, I saw your Volgraf portfolio and..."
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project
+      category: portfolio
+
+exclude:
+  - README.md
+  - LICENSE

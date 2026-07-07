@@ -1,0 +1,75 @@
+---
+layout: default
+---
+<article class="mx-auto max-w-4xl px-5 py-14 md:py-20" itemscope itemtype="https://schema.org/CreativeWork">
+
+  <nav class="mb-8" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint transition-colors hover:text-accent" data-i18n="detail.back">← All projects</a>
+  </nav>
+
+  <!-- Title block header -->
+  <header class="reveal border border-line bg-panel">
+    <div class="flex flex-wrap divide-x divide-line border-b border-line font-mono text-[10px] uppercase tracking-[0.2em] text-faint">
+      <span class="px-3 py-1.5">DWG NO. {{ page.slug | default: page.title | slugify | upcase | truncate: 14, "" }}</span>
+      <span class="px-3 py-1.5">DATE {{ page.date | date: "%Y-%m" }}</span>
+      <span class="px-3 py-1.5">{% if page.category == "shop" %}<span class="text-accent" data-i18n="badge.shop">For sale</span>{% else %}PORTFOLIO{% endif %}</span>
+    </div>
+    <div class="px-5 py-5">
+      <h1 class="font-display text-3xl font-medium text-white md:text-4xl" itemprop="name">{{ page.title }}</h1>
+      {% if page.description %}<p class="mt-2 text-body" itemprop="abstract">{{ page.description }}</p>{% endif %}
+      {% if page.summary_tr %}<p class="mt-2 hidden text-body" data-tr-only itemprop="abstract" lang="tr">{{ page.summary_tr }}</p>{% endif %}
+    </div>
+  </header>
+
+  {% if page.image %}
+  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" itemprop="image"
+       class="mt-8 aspect-[3/2] w-full border border-line object-cover" />
+  {% endif %}
+
+  <!-- Buy / contact actions -->
+  <div class="mt-8 flex flex-wrap items-center gap-4">
+    {% if page.buy_url %}
+    <a href="{{ page.buy_url }}" target="_blank" rel="noopener"
+       class="inline-flex items-center gap-2 bg-accent px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-ink transition-colors hover:bg-white">
+      <span data-i18n="detail.buy">Buy File</span>{% if page.price %}<span aria-hidden="true">·</span><span>{{ page.price }}</span>{% endif %}
+    </a>
+    {% endif %}
+    <a href="https://wa.me/{{ site.whatsapp }}?text={{ site.whatsapp_message | append: ' (' | append: page.title | append: ')' | url_encode }}"
+       target="_blank" rel="noopener"
+       class="inline-flex items-center gap-2 border border-line px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-body transition-colors hover:border-accent hover:text-accent"
+       data-i18n="detail.ask">Ask on WhatsApp</a>
+  </div>
+
+  <!-- Long-form write-up (markdown body) -->
+  <div class="prose-volgraf mt-10 text-body" itemprop="text">
+    {{ content }}
+  </div>
+
+  {% if page.tags and page.tags != empty %}
+  <div class="mt-10 flex flex-wrap gap-2 border-t border-line pt-6">
+    {% for tag in page.tags %}
+    <span class="border border-line px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.12em] text-accent">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if page.buy_url %}
+  <!-- Product structured data for items with a buy link -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": {{ page.title | jsonify }},
+    "description": {{ page.description | default: page.title | jsonify }},
+    {% if page.image %}"image": {{ page.image | absolute_url | jsonify }},{% endif %}
+    "url": {{ page.url | absolute_url | jsonify }},
+    "brand": { "@type": "Brand", "name": "Volgraf" },
+    "offers": {
+      "@type": "Offer",
+      "url": {{ page.buy_url | jsonify }},
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+  {% endif %}
+</article>

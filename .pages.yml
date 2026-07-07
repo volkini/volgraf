@@ -1,0 +1,64 @@
+# ============================================================
+# Pages CMS configuration — https://app.pagescms.org
+# Log in with your GitHub account, pick the volkini/volgraf
+# repository, and you get a WordPress-like editing panel that
+# saves straight to the site.
+# ============================================================
+media:
+  input: assets/images
+  output: /volgraf/assets/images
+
+content:
+  - name: projects
+    label: Projects
+    type: collection
+    path: _projects
+    filename: "{fields.title}.md"
+    view:
+      fields: [title, category, date]
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Project title
+        type: string
+        required: true
+      - name: description
+        label: Short description (shows in Google results and on cards, ~150 chars)
+        type: text
+        required: true
+      - name: summary_tr
+        label: Türkçe özet (isteğe bağlı — TR dilinde gösterilir)
+        type: text
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: image
+        label: Cover image
+        type: image
+      - name: category
+        label: Category
+        type: select
+        default: portfolio
+        options:
+          values:
+            - value: portfolio
+              label: Portfolio
+            - value: shop
+              label: 3D Print File (for sale)
+      - name: price
+        label: Price (only for items for sale, e.g. $12)
+        type: string
+      - name: buy_url
+        label: Buy link (Shopier, Gumroad, Cults3D... — only for items for sale)
+        type: string
+      - name: tags
+        label: Keywords (SEO — what buyers/employers would search for)
+        type: string
+        list: true
+      - name: body
+        label: Full write-up
+        type: rich-text

@@ -1,0 +1,26 @@
+{% comment %} Reusable project card. Usage: {% include project-card.html project=p %} {% endcomment %}
+<a href="{{ include.project.url | relative_url }}"
+   class="reveal card-hover group block overflow-hidden border border-line bg-panel">
+  <div class="relative overflow-hidden border-b border-line">
+    {% if include.project.image %}
+    <img src="{{ include.project.image | relative_url }}" alt="{{ include.project.title }}" loading="lazy"
+         class="card-img aspect-[3/2] w-full object-cover" />
+    {% else %}
+    <div class="card-img flex aspect-[3/2] w-full items-center justify-center bg-panel2 font-mono text-xs uppercase tracking-[0.25em] text-faint">Volgraf</div>
+    {% endif %}
+    {% if include.project.category == "shop" %}
+    <span class="absolute right-3 top-3 bg-accent px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.15em] text-ink" data-i18n="badge.shop">For sale</span>
+    {% endif %}
+  </div>
+  <div class="p-5">
+    <h3 class="font-display text-lg font-medium text-white transition-colors group-hover:text-accent">{{ include.project.title }}</h3>
+    {% if include.project.description %}<p class="mt-1.5 text-sm text-faint">{{ include.project.description | truncate: 110 }}</p>{% endif %}
+    {% if include.project.tags and include.project.tags != empty %}
+    <div class="mt-4 flex flex-wrap gap-1.5">
+      {% for tag in include.project.tags limit: 4 %}
+      <span class="border border-line px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-faint">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</a>
