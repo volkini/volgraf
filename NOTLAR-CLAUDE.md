@@ -1,7 +1,16 @@
-# Claude oturum notları — 8 Temmuz 2026
+# Claude oturum notları
 
-Volgraf sitesi üzerine yapılan çalışmanın özeti ve yapılacaklar. (Bu dosya `claude-notlar`
-branch'indedir, siteye dahil değildir.)
+Volgraf sitesi üzerine yapılan çalışmanın özeti ve yapılacaklar — **iki bilgisayar
+arasındaki senkronizasyon dosyası.**
+
+**Nasıl kullanılır:** Dosya `main` branch'indedir (Jekyll `exclude` listesinde, siteye
+dahil edilmez). Her Claude oturumu sonunda o günkü durum ve yapılacaklar buraya tarihli
+bölüm olarak eklenir ve push'lanır. Yeni oturuma başlarken önce `git pull` yapılır ve
+Claude'dan bu dosyayı okuması istenir — kaldığın yerden devam etmenin yolu budur.
+
+---
+
+## Oturum: 8 Temmuz 2026 (ev)
 
 ## Mevcut durum
 
@@ -59,3 +68,21 @@ branch'indedir, siteye dahil değildir.)
    metinler). Ana sayfadaki sosyal paylaşım görseli (og:image, 1200×630) de placeholder.
 3. Her yeni proje sayfası uzun kuyruklu aramalar için giriş kapısı — detaylı yazmaya devam.
 4. İleride: Tailwind CDN yerine derlenmiş CSS (sayfa hızı), Bing Webmaster Tools.
+
+---
+
+## Oturum: 8 Temmuz 2026 (is bilgisayari)
+
+- `claude-notlar` branch'i `main`'e alindi ve bu dosya senkronizasyon dosyasi yapildi
+  (Jekyll exclude'a eklendi, sitede yayinlanmaz). `claude-notlar` branch'i silindi.
+- volgraf.com DNS kontrol edildi: Cloudflare NS (rex/clarissa), A kaydi yok - not
+  dosyasindaki durumla ayni, degisiklik yok.
+- **Bekleyen isler (oncelik sirasiyla):**
+  1. Cloudflare hesap kontrolu ile volgraf.com sahipligi netlestirilecek (yukaridaki
+     "Sahiplik kontrolu" adimlari).
+  2. Sahiplik dogrulanirsa: once Cloudflare'e DNS kayitlari, SONRA evdeki bilgisayardaki
+     59e9ccc commit'i push'lanacak. DIKKAT: ev bilgisayari push'tan once `git pull`
+     yapmali (main'e bu oturumda yeni commit'ler eklendi, 59e9ccc _config.yml'i
+     degistirdigi icin kucuk bir merge gerekebilir).
+  3. Google Search Console kaydi (alan adi netlesince "Domain" tipi mulk olarak).
+  4. Placeholder gorseller gercek render/fotograflarla degistirilecek (Pages CMS'ten).
