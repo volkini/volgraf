@@ -103,3 +103,33 @@ Claude'dan bu dosyayı okuması istenir — kaldığın yerden devam etmenin yol
   onerilir).
 - Karar bekleniyor: hangi uzanti alinacak. Oneri: volgraf.net (uluslararasi satis +
   EN SEO hedefine uygun) ve istege bagli yaninda volgraf.com.tr (Turkiye guveni).
+
+---
+
+## Oturum: 13 Temmuz 2026 (is bilgisayari) - MARKA ARASTIRMASI
+
+Yeni isim aranyor (Volgraf sart degil, .com'u bos bir isim istendi). 36 aday tarandi:
+.com (Verisign RDAP) + Instagram (tarayici ile) + YouTube + marka cakismasi aramasi.
+
+### Finalistler - hepsinde .com + Instagram + YouTube BOS (13 Temmuz itibariyle)
+
+1. **PartKraft** (partkraft.com) - ONERILEN. Kisa (9 harf), TR+EN kolay telaffuz/yazim,
+   uretim havasi guclu, cakisma yok. Turk musteri de hedefse en iyisi.
+2. **ChamferWorks** (chamferworks.com) - yakin ikinci. En guclu muhendislik sinyali,
+   ama Turkce konusana telaffuzu zor. ABD'de "Chamfer Woodworking" var (farkli isim
+   ve sektor, dusuk risk).
+3. **SnapFitWorks** (snapfitworks.com) - 3D print dosya satisina en uygun cagrisim,
+   ama uzun ve "print dukkani" gibi durabilir.
+4. MillAndMold - ahsap isi cagrisimi + benzer isimli firmalar. Onerilmez.
+5. DraftAndMill - pub/bira evi gibi okunabiliyor. Onerilmez.
+
+### Elenenler (.com bos ama Instagram alinmis)
+partdraft, milldraft, mekaforge, torqform (torqform ayrica aktif Kore markasi).
+
+### Isim secilince yapilacaklar
+1. Ayni gun: .com satin al (Porkbun/Namecheap) + Instagram + YouTube hesaplarini ac.
+2. Claude'a soyle: sitedeki tum marka metinleri, logo, _config.yml, repo adi ve
+   Pages CMS yapilandirmasi yeni isme cevrilecek; alan adi GitHub Pages'e baglanacak
+   (DNS kayitlari + CNAME + Enforce HTTPS); Google Search Console kaydi yapilacak.
+3. GitHub repo adi degisirse eski volkini.github.io/volgraf adresi otomatik yonlenir
+   (GitHub rename yonlendirmesi), Pages CMS'te repo yeniden secilir.
