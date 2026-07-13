@@ -86,3 +86,20 @@ Claude'dan bu dosyayı okuması istenir — kaldığın yerden devam etmenin yol
      degistirdigi icin kucuk bir merge gerekebilir).
   3. Google Search Console kaydi (alan adi netlesince "Domain" tipi mulk olarak).
   4. Placeholder gorseller gercek render/fotograflarla degistirilecek (Pages CMS'ten).
+
+---
+
+## Oturum: 13 Temmuz 2026 (is bilgisayari) - ALAN ADI SONUCU
+
+- **volgraf.com bizim degil.** Volkan tum kontrolleri yapti: Cloudflare hesabi yok,
+  e-postalarda iz yok. Alan adini 25 Haziran'da baskasi tescillemis (park sayfasi da
+  yok, A kaydi bos).
+- **ONEMLI: Evdeki 59e9ccc commit'i ("Move site to custom domain volgraf.com")
+  ARTIK PUSH'LANMAMALI ve silinmeli** (`git reset --hard origin/main` ile - once
+  baska degisiklik olmadigindan emin ol). Alan adi degisince yeni yapilandirmayi
+  is bilgisayarindaki oturum hazirlayacak.
+- Alternatif uzantilar kontrol edildi (RDAP), hepsi BOS: volgraf.net, .org, .co,
+  .io, .dev, .me, .xyz, .engineer, .com.tr (com.tr icin trabis.gov.tr'den teyit
+  onerilir).
+- Karar bekleniyor: hangi uzanti alinacak. Oneri: volgraf.net (uluslararasi satis +
+  EN SEO hedefine uygun) ve istege bagli yaninda volgraf.com.tr (Turkiye guveni).
