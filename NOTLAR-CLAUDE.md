@@ -166,3 +166,8 @@ kalacak, gecis tek seferde yapilacak).
 5. GrabCAD profili ac, en iyi modelleri yukle, footer'a linki ekle (_config.yml social.grabcad).
 6. LinkedIn profili (EN) kur/guncelle, siteye bagla (social.linkedin). Upwork profili ac.
 7. Reklam EN SON: site olgunlasip referans birikince konusulacak. AdSense YOK (karar).
+
+- DUZELTME (14 Tem): Iletisim e-postasi volkini@gmail.com olarak degistirildi
+  (volkan@aykimaluminium.com DEGIL). Form aktivasyon maili gmail'e gelecek.
+  Tam site kontrolu yapildi: 11 sayfa 200, eski adres temizlendi, SEO etiketleri
+  ve site haritasi tam, WhatsApp/dil degistirici canlida dogrulandi, konsol hatasiz.
