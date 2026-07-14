@@ -9,7 +9,11 @@ image: https://placehold.co/1200x630/0C0C0E/FF6B1A/png?text=Volgraf
 
 <!-- ================= HERO ================= -->
 <section class="mx-auto max-w-6xl px-5 pt-20 pb-24 md:pt-28 md:pb-32">
-  <p class="font-mono text-xs uppercase tracking-[0.3em] text-accent" data-i18n="hero.kicker">Portfolio / Rev. B</p>
+  <p class="inline-flex items-center gap-2 border border-line bg-panel px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-body">
+    <span class="h-1.5 w-1.5 rounded-full bg-green-500" aria-hidden="true"></span>
+    <span data-i18n="hero.avail">Available for remote CAD &amp; CAE projects</span>
+  </p>
+  <p class="mt-6 font-mono text-xs uppercase tracking-[0.3em] text-accent" data-i18n="hero.kicker">Portfolio / Rev. B</p>
   <h1 class="mt-5 font-display text-4xl font-medium leading-tight text-white md:text-6xl" data-i18n="hero.title">Mechanical Design Engineer</h1>
   <p class="mt-5 max-w-2xl text-lg leading-relaxed text-body" data-i18n="hero.subtitle">
     CAD design, DFM-driven part development, and manufacturing-ready engineering — from first concept to production floor.
@@ -18,8 +22,9 @@ image: https://placehold.co/1200x630/0C0C0E/FF6B1A/png?text=Volgraf
     I'm Volkan — a mechanical design engineer who likes designs that survive contact with the production floor. My work spans parametric CAD, DFM and rapid prototyping, with a particular fondness for aluminium: extrusions, machined parts, and the small details that make them manufacturable. If a part is easy to make, easy to assemble and hard to break, I call it done.
   </p>
   <div class="mt-9 flex flex-wrap gap-4">
-    <a href="{{ '/projects/' | relative_url }}" class="inline-flex items-center gap-2 bg-accent px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-ink transition-colors hover:bg-white" data-i18n="hero.ctaProjects">View Projects</a>
-    <a href="#" data-wa-link target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-line px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-body transition-colors hover:border-accent hover:text-accent" data-i18n="hero.ctaContact">Get in Touch</a>
+    <a href="{{ '/contact/' | relative_url }}" class="inline-flex items-center gap-2 bg-accent px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-ink transition-colors hover:bg-white" data-i18n="nav.quote">Get a Quote</a>
+    <a href="{{ '/services/' | relative_url }}" class="inline-flex items-center gap-2 border border-line px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-body transition-colors hover:border-accent hover:text-accent" data-i18n="nav.services">Services</a>
+    <a href="{{ '/projects/' | relative_url }}" class="inline-flex items-center gap-2 border border-line px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-body transition-colors hover:border-accent hover:text-accent" data-i18n="hero.ctaProjects">View Projects</a>
   </div>
 </section>
 

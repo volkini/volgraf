@@ -97,9 +97,11 @@
       </a>
 
       <div class="hidden items-center gap-7 md:flex">
+        <a href="{{ '/services/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint transition-colors hover:text-accent" data-i18n="nav.services">Services</a>
         <a href="{{ '/projects/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint transition-colors hover:text-accent" data-i18n="nav.projects">Projects</a>
         <a href="{{ '/shop/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint transition-colors hover:text-accent" data-i18n="nav.shop">3D Files</a>
-        <a href="#" data-wa-link target="_blank" rel="noopener" class="font-mono text-xs uppercase tracking-[0.18em] text-faint transition-colors hover:text-accent" data-i18n="nav.contact">Contact</a>
+        <a href="{{ '/about/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint transition-colors hover:text-accent" data-i18n="nav.about">About</a>
+        <a href="{{ '/contact/' | relative_url }}" class="bg-accent px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-ink transition-colors hover:bg-white" data-i18n="nav.quote">Get a Quote</a>
         <div class="flex items-center gap-1 border border-line px-1 py-1" role="group" aria-label="Language">
           <button type="button" data-lang-btn="en" class="px-2 py-0.5 font-mono text-xs tracking-widest">EN</button>
           <span class="text-line" aria-hidden="true">|</span>
@@ -125,9 +127,11 @@
 
     <div id="mobile-menu" class="hidden border-t border-line bg-ink/95 px-5 py-4 md:hidden">
       <div class="flex flex-col gap-4">
+        <a href="{{ '/services/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint hover:text-accent" data-i18n="nav.services">Services</a>
         <a href="{{ '/projects/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint hover:text-accent" data-i18n="nav.projects">Projects</a>
         <a href="{{ '/shop/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint hover:text-accent" data-i18n="nav.shop">3D Files</a>
-        <a href="#" data-wa-link target="_blank" rel="noopener" class="font-mono text-xs uppercase tracking-[0.18em] text-faint hover:text-accent" data-i18n="nav.contact">Contact</a>
+        <a href="{{ '/about/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint hover:text-accent" data-i18n="nav.about">About</a>
+        <a href="{{ '/contact/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-accent hover:text-white" data-i18n="nav.quote">Get a Quote</a>
       </div>
     </div>
   </header>
@@ -140,7 +144,12 @@
   <footer class="border-t border-line">
     <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-8">
       <p class="font-mono text-xs tracking-[0.15em] text-faint">© <span id="footer-year">2026</span> Volgraf — Volkan Cakir</p>
-      <p class="font-mono text-[10px] uppercase tracking-[0.25em] text-faint" data-i18n="footer.tag">Designed for manufacturing</p>
+      <div class="flex items-center gap-5">
+        {% if site.social.linkedin != "" %}<a href="{{ site.social.linkedin }}" target="_blank" rel="noopener" class="font-mono text-[10px] uppercase tracking-[0.2em] text-faint hover:text-accent">LinkedIn</a>{% endif %}
+        {% if site.social.grabcad != "" %}<a href="{{ site.social.grabcad }}" target="_blank" rel="noopener" class="font-mono text-[10px] uppercase tracking-[0.2em] text-faint hover:text-accent">GrabCAD</a>{% endif %}
+        {% if site.social.instagram != "" %}<a href="{{ site.social.instagram }}" target="_blank" rel="noopener" class="font-mono text-[10px] uppercase tracking-[0.2em] text-faint hover:text-accent">Instagram</a>{% endif %}
+        <p class="font-mono text-[10px] uppercase tracking-[0.25em] text-faint" data-i18n="footer.tag">Designed for manufacturing</p>
+      </div>
     </div>
   </footer>
 
@@ -169,6 +178,38 @@
     en: {
       "a11y.skip": "Skip to content",
       "nav.projects": "Projects", "nav.shop": "3D Files", "nav.contact": "Contact",
+      "nav.services": "Services", "nav.about": "About", "nav.quote": "Get a Quote",
+      "hero.avail": "Available for remote CAD & CAE projects",
+      "svc.title": "Services",
+      "svc.subtitle": "Remote CAD & CAE engineering — from a single part to a complete machine.",
+      "svc.s1.title": "Part & Product Design",
+      "svc.s2.title": "Machine Design",
+      "svc.s3.title": "Manufacturing Drawings",
+      "svc.s4.title": "Remote Assembly Support",
+      "svc.how": "How it works",
+      "svc.how1": "Send your brief, sketches or files.",
+      "svc.how2": "Fixed quote and timeline within 24 hours.",
+      "svc.how3": "Design iterations with regular checkpoints.",
+      "svc.how4": "Delivery — files, drawings and full IP transfer.",
+      "svc.trust": "Working with me",
+      "svc.cta": "Request a Quote",
+      "about.title": "About", "about.role": "Mechanical Design Engineer",
+      "about.tools": "Tools & Software", "about.toolsSoon": "Full toolchain list coming soon.",
+      "about.exp": "Experience", "about.expSoon": "Detailed background coming soon.",
+      "quote.badge": "Reply within 24h",
+      "quote.title": "Request a Quote",
+      "quote.subtitle": "Tell me about your project — you'll get a fixed price and timeline within 24 hours.",
+      "quote.name": "Your name", "quote.email": "Email", "quote.company": "Company (optional)",
+      "quote.service": "What do you need?", "quote.other": "Something else",
+      "quote.message": "Project details",
+      "quote.fileHint": "Have files (STEP, sketches, photos)? Mention it — I'll reply with a secure upload link.",
+      "quote.send": "Send Request",
+      "quote.direct": "Prefer email?", "quote.chat": "Quick question?",
+      "quote.tz": "Based in Turkey (GMT+3). Full overlap with European hours, US mornings, Asian afternoons.",
+      "thanks.kicker": "Request received",
+      "thanks.title": "Thanks — it's in the queue.",
+      "thanks.body": "I'll get back to you with a quote and timeline within 24 hours. If it's urgent, the WhatsApp button is right there.",
+      "thanks.home": "← Back to home",
       "hero.kicker": "Portfolio / Rev. B",
       "hero.title": "Mechanical Design Engineer",
       "hero.subtitle": "CAD design, DFM-driven part development, and manufacturing-ready engineering — from first concept to production floor.",
@@ -194,6 +235,38 @@
     tr: {
       "a11y.skip": "İçeriğe geç",
       "nav.projects": "Projeler", "nav.shop": "3B Dosyalar", "nav.contact": "İletişim",
+      "nav.services": "Hizmetler", "nav.about": "Hakkımda", "nav.quote": "Teklif Al",
+      "hero.avail": "Uzaktan CAD & CAE projeleri için müsait",
+      "svc.title": "Hizmetler",
+      "svc.subtitle": "Uzaktan CAD ve CAE mühendisliği — tek parçadan komple makinaya.",
+      "svc.s1.title": "Parça ve Ürün Tasarımı",
+      "svc.s2.title": "Makina Tasarımı",
+      "svc.s3.title": "Üretim Resimleri",
+      "svc.s4.title": "Uzaktan Montaj Desteği",
+      "svc.how": "Nasıl çalışır",
+      "svc.how1": "Talebinizi, eskizlerinizi veya dosyalarınızı gönderin.",
+      "svc.how2": "24 saat içinde net fiyat ve takvim.",
+      "svc.how3": "Düzenli kontrol noktalarıyla tasarım iterasyonları.",
+      "svc.how4": "Teslim — dosyalar, resimler ve tüm fikri hakların devri.",
+      "svc.trust": "Benimle çalışmak",
+      "svc.cta": "Teklif İsteyin",
+      "about.title": "Hakkımda", "about.role": "Makine Tasarım Mühendisi",
+      "about.tools": "Araçlar ve Yazılımlar", "about.toolsSoon": "Tam yazılım listesi yakında.",
+      "about.exp": "Deneyim", "about.expSoon": "Detaylı özgeçmiş yakında.",
+      "quote.badge": "24 saatte yanıt",
+      "quote.title": "Teklif İsteyin",
+      "quote.subtitle": "Projenizi anlatın — 24 saat içinde net fiyat ve takvim alın.",
+      "quote.name": "Adınız", "quote.email": "E-posta", "quote.company": "Firma (isteğe bağlı)",
+      "quote.service": "Neye ihtiyacınız var?", "quote.other": "Başka bir şey",
+      "quote.message": "Proje detayları",
+      "quote.fileHint": "Dosyanız mı var (STEP, eskiz, fotoğraf)? Belirtin — güvenli yükleme bağlantısı göndereyim.",
+      "quote.send": "Talebi Gönder",
+      "quote.direct": "E-posta mı tercih edersiniz?", "quote.chat": "Kısa bir soru mu?",
+      "quote.tz": "Türkiye merkezli (GMT+3). Avrupa saatleriyle tam, ABD sabahları ve Asya öğleden sonralarıyla kısmi örtüşme.",
+      "thanks.kicker": "Talebiniz alındı",
+      "thanks.title": "Teşekkürler — sıraya girdi.",
+      "thanks.body": "24 saat içinde fiyat ve takvimle döneceğim. Aceleyse WhatsApp düğmesi hemen orada.",
+      "thanks.home": "← Ana sayfaya dön",
       "hero.kicker": "Portfolyo / Rev. B",
       "hero.title": "Makine Tasarım Mühendisi",
       "hero.subtitle": "CAD tasarım, DFM odaklı parça geliştirme ve üretime hazır mühendislik — ilk konseptten üretim sahasına.",

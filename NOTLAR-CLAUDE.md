@@ -133,3 +133,36 @@ partdraft, milldraft, mekaforge, torqform (torqform ayrica aktif Kore markasi).
    (DNS kayitlari + CNAME + Enforce HTTPS); Google Search Console kaydi yapilacak.
 3. GitHub repo adi degisirse eski volkini.github.io/volgraf adresi otomatik yonlenir
    (GitHub rename yonlendirmesi), Pages CMS'te repo yeniden secilir.
+
+---
+
+## Oturum: 14 Temmuz 2026 (is bilgisayari) - HIZMET SITESINE DONUSUM + YOL HARITASI
+
+Hedef netlesti: site, ABD/Avrupa (belki Asya) kaynakli uzaktan CAD-CAE isi cekecek.
+Marka karari simdilik PartKraft (alan adi HENUZ ALINMADI - alinana kadar site Volgraf
+kalacak, gecis tek seferde yapilacak).
+
+### Bu oturumda siteye eklenenler
+- /services/ - 4 hizmet: Parca ve Urun Tasarimi, Makina Tasarimi, Uretim Resimleri
+  (GD&T), Uzaktan Montaj Destegi + "nasil calisir" + guven sinyalleri (NDA, IP devri,
+  saat dilimi, Ingilizce).
+- /contact/ - teklif formu (formsubmit.co uzerinden site.email adresine gider).
+  ONEMLI: ILK form gonderiminde formsubmit.co aktivasyon maili atar - mailde
+  "Activate" tiklanmali, yoksa form calismaz. E-posta _config.yml'de: email alani.
+- /about/ - iskelet hazir; CV gelince Araclar/Deneyim bolumleri doldurulacak,
+  foto + CV indirme butonu eklenecek.
+- /thanks/ - form sonrasi tesekkur sayfasi.
+- Nav: Services / Projects / 3D Files / About / Get a Quote. Ana sayfa: "musait"
+  rozeti + Get a Quote birincil CTA. Footer: LinkedIn/GrabCAD/Instagram linkleri
+  (_config.yml social alani; bos oldugu surece gizli).
+
+### YOL HARITASI (oncelik sirasi)
+1. partkraft.com + @partkraft Instagram + YouTube al (AYNI GUN). Sonra Claude'a
+   soyle: site+repo yeni isme tasinacak, DNS baglanacak, Search Console kurulacak.
+2. Volkan CV gonderecek -> About sayfasi doldurulacak (araclar, deneyim, foto, CV pdf).
+3. Formun ilk aktivasyonu: /contact/ sayfasindan test gonderimi yap, gelen mailde
+   Activate'e tikla.
+4. Gercek proje gorselleri (Pages CMS'ten) + vaka calismasi formatina gecis. (Volkan: "en son is")
+5. GrabCAD profili ac, en iyi modelleri yukle, footer'a linki ekle (_config.yml social.grabcad).
+6. LinkedIn profili (EN) kur/guncelle, siteye bagla (social.linkedin). Upwork profili ac.
+7. Reklam EN SON: site olgunlasip referans birikince konusulacak. AdSense YOK (karar).

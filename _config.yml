@@ -18,6 +18,15 @@ author:
 whatsapp: "905435209120"
 whatsapp_message: "Hi Volkan, I saw your Volgraf portfolio and..."
 
+# Quote form + direct contact email (form submissions arrive here via formsubmit.co)
+email: volkan@aykimaluminium.com
+
+# Social profiles — leave empty ("") to hide the link in the footer.
+social:
+  linkedin: ""
+  grabcad: ""
+  instagram: ""
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
