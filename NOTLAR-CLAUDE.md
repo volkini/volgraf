@@ -10,6 +10,38 @@ Claude'dan bu dosyayı okuması istenir — kaldığın yerden devam etmenin yol
 
 ---
 
+## GUNCEL YAPILACAKLAR — son guncelleme: 14 Temmuz 2026
+
+Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
+
+- [ ] 1. (V) **Form aktivasyonu**: /contact/ sayfasindan deneme gonderisi yap,
+      volkini@gmail.com'a gelen formsubmit.co mailinde "Activate"e tikla.
+      Yapilmazsa musteri mesajlari ulasmaz.
+- [ ] 2. (V) **partkraft.com satin al** (Porkbun/Namecheap) + AYNI GUN Instagram
+      @partkraft ve YouTube @partkraft hesaplarini ac. (13 Tem itibariyle ucu de bos.)
+- [ ] 3. (C) Alan adi alininca: site+repo PartKraft'a tasinacak, DNS baglanacak,
+      Enforce HTTPS, Google Search Console + sitemap gonderimi.
+- [ ] 4. (V) **CV'yi Claude'a gonder** -> (C) /about/ doldurulacak: araclar/yazilimlar,
+      deneyim, foto, CV indirme butonu.
+- [ ] 5. (V) Gercek proje gorselleri (Pages CMS'ten yukle) -> (C) vaka calismasi
+      formatina gecis (problem-yaklasim-sonuc). Volkan: "en son is" dedi ama
+      Upwork/musteri trafigi oncesi sart.
+- [ ] 6. (V) GrabCAD profili ac + en iyi modelleri yukle -> (C) footer'a link
+      (_config.yml -> social.grabcad).
+- [ ] 7. (V) LinkedIn profili (EN) -> (C) profil metinlerini yazar, siteye baglar
+      (social.linkedin). Ardindan Upwork profili.
+- [ ] 8. Reklam EN SON (site olgunlasinca). AdSense YOK — kesin karar.
+
+### Tamamlananlar
+- [x] Cok sayfali Jekyll sitesi + SEO altyapisi (8 Tem)
+- [x] Pages CMS yonetim paneli (8 Tem)
+- [x] volgraf.com sahiplik arastirmasi — bizim degil (13 Tem)
+- [x] Marka arastirmasi — PartKraft secildi, simdilik (13 Tem)
+- [x] /services/, /about/ iskeleti, /contact/ teklif formu, /thanks/ (14 Tem)
+- [x] Iletisim e-postasi volkini@gmail.com'a duzeltildi + tam site kontrolu (14 Tem)
+
+---
+
 ## Oturum: 8 Temmuz 2026 (ev)
 
 ## Mevcut durum
