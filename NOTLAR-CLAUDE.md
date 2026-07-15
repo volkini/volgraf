@@ -19,10 +19,10 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
       Yapilmazsa musteri mesajlari ulasmaz.
 - [ ] 2. (V) Instagram @partkraft ve YouTube @partkraft hesaplarini ac (domain alindi,
       sosyal hesaplar bekliyor — gecikmeden!).
-- [ ] 3. (C+V) PartKraft gecisinin kalani: (V) Cloudflare'e DNS kayitlari + repo adini
-      partkraft yap -> (C) push + Enforce HTTPS kontrolu -> (V+C) Google Search Console
-      + sitemap gonderimi. Rebrand commit'i evde hazir, DNS bekleniyor (bkz. 15 Tem
-      aksam oturumu).
+- [ ] 3. (V) Gecis kalani: GitHub Settings->Pages'te **Enforce HTTPS**'i isaretle
+      (sertifika hazir olunca aktiflesir); repo adini `partkraft` yap (Settings->General);
+      Pages CMS'te repoyu yeniden sec. Sonra (V+C) Google Search Console: Domain mulku
+      ekle (Cloudflare'e TXT kaydi) + https://partkraft.com/sitemap.xml gonder.
 - [ ] 4. (V) **CV'yi Claude'a gonder** -> (C) /about/ doldurulacak: araclar/yazilimlar,
       deneyim, foto, CV indirme butonu.
 - [ ] 5. (V) Gercek proje gorselleri (Pages CMS'ten yukle) -> (C) vaka calismasi
@@ -39,6 +39,9 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 - [ ] 9. Reklam EN SON (site olgunlasinca). AdSense YOK — kesin karar.
 
 ### Tamamlananlar
+- [x] **partkraft.com CANLI**: DNS baglandi, custom domain ayarlandi (Settings->Pages'ten
+      elle gerekti, CNAME dosyasi tek basina yetmedi), HTTPS calisiyor, 8 sayfa +
+      sitemap + robots 200. www -> apex 301 calisiyor. (15 Tem aksam)
 - [x] Cloudflare hesabi acildi + **partkraft.com satin alindi** (15 Tem)
 - [x] Site iceriginin PartKraft'a rebrand'i (marka metinleri, logo yazisi, DWG PK- ,
       _config.yml, CNAME, robots.txt, Pages CMS) — evde commit'lendi (15 Tem)
