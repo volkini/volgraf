@@ -47,3 +47,4 @@ exclude:
   - README.md
   - LICENSE
   - NOTLAR-CLAUDE.md  # session sync notes, not part of the site
+  - SOSYAL-MEDYA-LOG.md  # social media post log, not part of the site

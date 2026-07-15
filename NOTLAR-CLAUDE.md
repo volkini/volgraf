@@ -10,7 +10,7 @@ Claude'dan bu dosyayı okuması istenir — kaldığın yerden devam etmenin yol
 
 ---
 
-## GUNCEL YAPILACAKLAR — son guncelleme: 14 Temmuz 2026
+## GUNCEL YAPILACAKLAR — son guncelleme: 15 Temmuz 2026
 
 Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 
@@ -30,7 +30,11 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
       (_config.yml -> social.grabcad).
 - [ ] 7. (V) LinkedIn profili (EN) -> (C) profil metinlerini yazar, siteye baglar
       (social.linkedin). Ardindan Upwork profili.
-- [ ] 8. Reklam EN SON (site olgunlasinca). AdSense YOK — kesin karar.
+- [ ] 8. (V) **Blotato hesabi ac** (blotato.com, API'li plan) + API anahtarini al +
+      sosyal hesaplari Blotato'ya bagla -> (C) social-media-manager skill'inin
+      config.json'u doldurulacak (bkz. 15 Tem oturumu). Sosyal hesaplar
+      acildiktan sonra (madde 2 ve 7) yapilabilir.
+- [ ] 9. Reklam EN SON (site olgunlasinca). AdSense YOK — kesin karar.
 
 ### Tamamlananlar
 - [x] Cok sayfali Jekyll sitesi + SEO altyapisi (8 Tem)
@@ -203,3 +207,26 @@ kalacak, gecis tek seferde yapilacak).
   (volkan@aykimaluminium.com DEGIL). Form aktivasyon maili gmail'e gelecek.
   Tam site kontrolu yapildi: 11 sayfa 200, eski adres temizlendi, SEO etiketleri
   ve site haritasi tam, WhatsApp/dil degistirici canlida dogrulandi, konsol hatasiz.
+
+---
+
+## Oturum: 15 Temmuz 2026 (is bilgisayari) - SOSYAL MEDYA SKILL'I
+
+**social-media-manager** Claude skill'i olusturuldu (bu bilgisayarda
+`C:\Users\galil\.claude\skills\social-media-manager\`). Ne yapar: PartKraft
+marka sesiyle (uzman-pratik muhendis, SADECE Ingilizce) LinkedIn / Instagram /
+Twitter-X / Facebook postlari yazar, Blotato API ile yayinlar, Blotato ile
+gorsel/video uretir. Kararlar:
+
+- Yayin oncesi HER post Volkan onayina sunulur (istisnasiz).
+- Gorseller: varsayilan Volkan'in render/fotolari; istenirse Blotato AI video.
+- Yayin kaydi: bu repodaki `SOSYAL-MEDYA-LOG.md` (Jekyll exclude'a eklendi,
+  iki bilgisayar arasi git ile senkron). Su an bos.
+- API anahtari SADECE yerel `config.json`'da tutulur (skill klasorunde),
+  repoya ASLA girmez. Ev bilgisayarinda skill klasoru ayrica kurulmali
+  (kopyala) ve config.json orada da olusturulmali.
+
+**Bekleyen:** Blotato hesabi henuz YOK (yapilacaklar madde 8). Hesap + API
+anahtari + hesap baglantilari tamamlaninca skill'e "kurulumu yap" demek
+yeterli — skill kurulum akisini icerir. O zamana kadar skill sadece taslak
+yazabilir, yayinlayamaz.
