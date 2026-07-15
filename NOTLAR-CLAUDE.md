@@ -268,6 +268,34 @@ yapilandirildi. Kararlar:
 
 ---
 
+## Oturum: 16 Temmuz 2026 (is bilgisayari) - GELIR STRATEJISI NETLESTI
+
+Icerik kanali fikri arastirma sonucu rafa kalkti (medyan getiri ~sifir, YouTube
+AI-slop yaptirimlari). Volkan CV'sini paylasti; 17 pazar taramasiyla kapsamli
+gelir plani cikarildi. **Rapor (artifact):**
+https://claude.ai/code/artifact/a53878ae-4fdc-463b-b1ad-8fc6d438b558
+
+Ozet karar - uc katmanli gelir mimarisi:
+1. **Nakit motoru (0-3 ay):** Upwork/Fiverr fikstur/kalip/DFM isleri.
+   Konumlandirma: "Manufacturing-focused design engineer: tooling, fixtures &
+   simulation" (genel CAD DEGIL). 12. ay hedefi $1.200-2.200/ay.
+2. **Premium (4-9 ay):** FEA/CFD projeleri ($1.5-4k/proje pazari), aluminyum
+   ekstruzyon kalip danismanligi (ABD danismanlik aglari uzman ariyor), PPAP
+   paketleri, denizcilik nisi.
+3. **Yari-pasif:** fonksiyonel STL katalogu (Cults3D %80 pay), ayda 4-5 dosya.
+
+Kritik notlar: (a) is sozlesmesindeki rekabet/ek is maddesi kontrol edilecek -
+Aykim'in rakibi/musterisinden is alinmayacak; (b) hizmet ihracatinda %80 gelir
+vergisi istisnasi VAR ama para beyanname tarihine kadar TR bankasina gelmeli -
+mali musavir sart; (c) ticari SolidWorks lisansi konusu ilk gelirle cozulecek
+(baslangicta musteri lisansi/Onshape).
+
+Siradaki adim: Volkan "Upwork profilini hazirla" diyince CV'den tam profil
+(baslik, ozet, 3 vaka calismasi, gig paketleri, fiyatlar) yazilacak. Site
+gorevleri (form aktivasyonu, About/CV) bu plana hizmet ediyor - oncelik korunuyor.
+
+---
+
 ## Oturum: 15 Temmuz 2026 (ev, aksam) - PARTKRAFT.COM ALINDI + REBRAND
 
 - Volkan Cloudflare hesabi acti ve **partkraft.com'u Cloudflare Registrar'dan aldi**
