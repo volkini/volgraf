@@ -32,10 +32,11 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
       (_config.yml -> social.grabcad).
 - [ ] 7. (V) LinkedIn profili (EN) -> (C) profil metinlerini yazar, siteye baglar
       (social.linkedin). Ardindan Upwork profili.
-- [ ] 8. (V) **Blotato hesabi ac** (blotato.com, API'li plan) + API anahtarini al +
-      sosyal hesaplari Blotato'ya bagla -> (C) social-media-manager skill'inin
-      config.json'u doldurulacak (bkz. 15 Tem oturumu). Sosyal hesaplar
-      acildiktan sonra (madde 2 ve 7) yapilabilir.
+- [ ] 8. (V) **Icerik kanallari icin hesaplar** (bkz. 15 Tem 2. oturum — plan
+      DEGISTI): PartKraft bilim-teknoloji icerik kanallari (EN: @partkraft,
+      TR: orn. @partkrafttr) — YouTube, TikTok, Instagram, Facebook, X,
+      Threads, Pinterest, Bluesky. Sonra Blotato hesabi (API'li plan) +
+      hesaplari bagla -> (C) skill config.json doldurulur.
 - [ ] 9. Reklam EN SON (site olgunlasinca). AdSense YOK — kesin karar.
 
 ### Tamamlananlar
@@ -238,6 +239,32 @@ gorsel/video uretir. Kararlar:
 anahtari + hesap baglantilari tamamlaninca skill'e "kurulumu yap" demek
 yeterli — skill kurulum akisini icerir. O zamana kadar skill sadece taslak
 yazabilir, yayinlayamaz.
+
+---
+
+## Oturum: 15 Temmuz 2026 (is bilgisayari, 2. oturum) - SKILL HEDEFI DEGISTI
+
+**Onceki oturumdaki varsayim yanlisti** — skill site/hizmet tanitimi icin
+degil. Volkan'in asil hedefi: **gelir amacli bilim-teknoloji icerik
+kanallari** (otomasyon icerigi uretip yayinlamak). Skill buna gore bastan
+yapilandirildi. Kararlar:
+
+- Marka yine **PartKraft** ama iki kimlik ayri yasar: site = CV/portfolyo,
+  sosyal hesaplar = icerik kanali. Icerik tonu "muhendis gozunden
+  bilim-teknoloji" — profesyonel kimlikle celismez.
+- **2 kanal:** EN (@partkraft) + TR (orn. @partkrafttr). Icerik her iki
+  dilde NATIF uretilir (birebir ceviri degil).
+- **Nisler (rotasyon):** ilginc bilgi/fact kisa videolari + guncel
+  teknoloji-AI haberleri + uzay/astronomi.
+- **Platformlar:** YouTube, TikTok, Instagram, Facebook, X, Threads,
+  Pinterest, Bluesky (Blotato'nun destekledigi hepsi).
+- **Tempo:** kanal basina haftada 3-4 icerik. **"content-week" modeli:**
+  haftada tek oturumda konu secimi -> uretim (Blotato AI video) -> TOPLU
+  ONAY -> haftaya zamanlanmis yayin. Onaysiz hicbir sey yayinlanmaz.
+- Dogruluk kurali: her bilimsel iddia kaynaktan dogrulanir; YouTube/TikTok'ta
+  AI icerik bildirimi (containsSyntheticMedia / isAiGenerated) zorunlu.
+- SOSYAL-MEDYA-LOG.md basligi yeni projeye gore guncellendi (bu repoda
+  yalnizca iki bilgisayar arasi senkron icin duruyor, siteyle ilgisi yok).
 
 ---
 
