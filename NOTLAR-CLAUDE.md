@@ -17,10 +17,12 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 - [ ] 1. (V) **Form aktivasyonu**: /contact/ sayfasindan deneme gonderisi yap,
       volkini@gmail.com'a gelen formsubmit.co mailinde "Activate"e tikla.
       Yapilmazsa musteri mesajlari ulasmaz.
-- [ ] 2. (V) **partkraft.com satin al** (Porkbun/Namecheap) + AYNI GUN Instagram
-      @partkraft ve YouTube @partkraft hesaplarini ac. (13 Tem itibariyle ucu de bos.)
-- [ ] 3. (C) Alan adi alininca: site+repo PartKraft'a tasinacak, DNS baglanacak,
-      Enforce HTTPS, Google Search Console + sitemap gonderimi.
+- [ ] 2. (V) Instagram @partkraft ve YouTube @partkraft hesaplarini ac (domain alindi,
+      sosyal hesaplar bekliyor — gecikmeden!).
+- [ ] 3. (C+V) PartKraft gecisinin kalani: (V) Cloudflare'e DNS kayitlari + repo adini
+      partkraft yap -> (C) push + Enforce HTTPS kontrolu -> (V+C) Google Search Console
+      + sitemap gonderimi. Rebrand commit'i evde hazir, DNS bekleniyor (bkz. 15 Tem
+      aksam oturumu).
 - [ ] 4. (V) **CV'yi Claude'a gonder** -> (C) /about/ doldurulacak: araclar/yazilimlar,
       deneyim, foto, CV indirme butonu.
 - [ ] 5. (V) Gercek proje gorselleri (Pages CMS'ten yukle) -> (C) vaka calismasi
@@ -37,6 +39,9 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 - [ ] 9. Reklam EN SON (site olgunlasinca). AdSense YOK — kesin karar.
 
 ### Tamamlananlar
+- [x] Cloudflare hesabi acildi + **partkraft.com satin alindi** (15 Tem)
+- [x] Site iceriginin PartKraft'a rebrand'i (marka metinleri, logo yazisi, DWG PK- ,
+      _config.yml, CNAME, robots.txt, Pages CMS) — evde commit'lendi (15 Tem)
 - [x] Cok sayfali Jekyll sitesi + SEO altyapisi (8 Tem)
 - [x] Pages CMS yonetim paneli (8 Tem)
 - [x] volgraf.com sahiplik arastirmasi — bizim degil (13 Tem)
@@ -230,3 +235,20 @@ gorsel/video uretir. Kararlar:
 anahtari + hesap baglantilari tamamlaninca skill'e "kurulumu yap" demek
 yeterli — skill kurulum akisini icerir. O zamana kadar skill sadece taslak
 yazabilir, yayinlayamaz.
+
+---
+
+## Oturum: 15 Temmuz 2026 (ev, aksam) - PARTKRAFT.COM ALINDI + REBRAND
+
+- Volkan Cloudflare hesabi acti ve **partkraft.com'u Cloudflare Registrar'dan aldi**
+  (tescil 15 Tem 12:51 UTC, NS: becky/skip.ns.cloudflare.com, RDAP ile teyitli).
+- Sitenin tamami PartKraft'a cevrildi (tek commit): tum gorunur marka metinleri,
+  navbar/footer, WhatsApp mesajlari, DWG numaralari VG- -> PK-, prose CSS sinifi,
+  localStorage anahtari, _config.yml (title/url/baseurl), CNAME=partkraft.com,
+  robots.txt, .pages.yml. Favicon marka-notr, degismedi.
+- **PUSH BEKLIYOR**: once Volkan Cloudflare'e DNS kayitlarini ekleyecek
+  (A @ 185.199.108/109/110/111.153 + CNAME www -> volkini.github.io, hepsi DNS only),
+  SONRA bu commit push'lanacak. DNS'ten once push = site erisilemez olur.
+- Push sonrasi: GitHub Settings -> Pages -> Enforce HTTPS; repo adi partkraft olarak
+  degistirilecek (V, GitHub Settings); Pages CMS'te repo yeniden secilecek;
+  Search Console kaydi.

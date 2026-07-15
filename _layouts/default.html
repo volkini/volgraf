@@ -64,16 +64,16 @@
     ::-webkit-scrollbar-thumb { background: #26262B; border-radius: 5px; }
     ::-webkit-scrollbar-thumb:hover { background: #3A3A40; }
     /* Long-form project text (markdown body) */
-    .prose-volgraf h2 { font-family: Fraunces, serif; color: #fff; font-size: 1.35rem; margin: 1.8em 0 .6em; }
-    .prose-volgraf h3 { font-family: Fraunces, serif; color: #fff; font-size: 1.15rem; margin: 1.5em 0 .5em; }
-    .prose-volgraf p { margin: .9em 0; line-height: 1.75; }
-    .prose-volgraf ul, .prose-volgraf ol { margin: .9em 0 .9em 1.4em; line-height: 1.7; }
-    .prose-volgraf ul { list-style: square; }
-    .prose-volgraf ol { list-style: decimal; }
-    .prose-volgraf a { color: #FF6B1A; text-decoration: underline; text-underline-offset: 3px; }
-    .prose-volgraf strong { color: #fff; }
-    .prose-volgraf img { border: 1px solid #26262B; margin: 1.2em 0; }
-    .prose-volgraf code { font-family: "DM Mono", monospace; font-size: .9em; color: #FF6B1A; }
+    .prose-partkraft h2 { font-family: Fraunces, serif; color: #fff; font-size: 1.35rem; margin: 1.8em 0 .6em; }
+    .prose-partkraft h3 { font-family: Fraunces, serif; color: #fff; font-size: 1.15rem; margin: 1.5em 0 .5em; }
+    .prose-partkraft p { margin: .9em 0; line-height: 1.75; }
+    .prose-partkraft ul, .prose-partkraft ol { margin: .9em 0 .9em 1.4em; line-height: 1.7; }
+    .prose-partkraft ul { list-style: square; }
+    .prose-partkraft ol { list-style: decimal; }
+    .prose-partkraft a { color: #FF6B1A; text-decoration: underline; text-underline-offset: 3px; }
+    .prose-partkraft strong { color: #fff; }
+    .prose-partkraft img { border: 1px solid #26262B; margin: 1.2em 0; }
+    .prose-partkraft code { font-family: "DM Mono", monospace; font-size: .9em; color: #FF6B1A; }
   </style>
 </head>
 
@@ -84,7 +84,7 @@
   <!-- ================= NAVBAR ================= -->
   <header class="sticky top-0 z-50 border-b border-line bg-ink/80 backdrop-blur-md">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4" aria-label="Main navigation">
-      <a href="{{ '/' | relative_url }}" class="flex items-center gap-2.5" aria-label="Volgraf — home">
+      <a href="{{ '/' | relative_url }}" class="flex items-center gap-2.5" aria-label="PartKraft — home">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" class="text-accent">
           <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1" />
           <line x1="11" y1="0" x2="11" y2="6" stroke="currentColor" stroke-width="1" />
@@ -93,7 +93,7 @@
           <line x1="16" y1="11" x2="22" y2="11" stroke="currentColor" stroke-width="1" />
           <circle cx="11" cy="11" r="1.2" fill="currentColor" />
         </svg>
-        <span class="font-display text-xl font-medium tracking-tight text-white">Volgraf</span>
+        <span class="font-display text-xl font-medium tracking-tight text-white">PartKraft</span>
       </a>
 
       <div class="hidden items-center gap-7 md:flex">
@@ -143,7 +143,7 @@
   <!-- ================= FOOTER ================= -->
   <footer class="border-t border-line">
     <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-8">
-      <p class="font-mono text-xs tracking-[0.15em] text-faint">© <span id="footer-year">2026</span> Volgraf — Volkan Cakir</p>
+      <p class="font-mono text-xs tracking-[0.15em] text-faint">© <span id="footer-year">2026</span> PartKraft — Volkan Cakir</p>
       <div class="flex items-center gap-5">
         {% if site.social.linkedin != "" %}<a href="{{ site.social.linkedin }}" target="_blank" rel="noopener" class="font-mono text-[10px] uppercase tracking-[0.2em] text-faint hover:text-accent">LinkedIn</a>{% endif %}
         {% if site.social.grabcad != "" %}<a href="{{ site.social.grabcad }}" target="_blank" rel="noopener" class="font-mono text-[10px] uppercase tracking-[0.2em] text-faint hover:text-accent">GrabCAD</a>{% endif %}
@@ -171,7 +171,7 @@
   const WHATSAPP_NUMBER = "{{ site.whatsapp }}";
   const WHATSAPP_MESSAGE = {
     en: "{{ site.whatsapp_message }}",
-    tr: "Merhaba Volkan, Volgraf portfolyonuzu gördüm ve..."
+    tr: "Merhaba Volkan, PartKraft portfolyonuzu gördüm ve..."
   };
 
   const I18N = {
@@ -307,7 +307,7 @@
     });
     const waUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(WHATSAPP_MESSAGE[currentLang] || WHATSAPP_MESSAGE.en);
     document.querySelectorAll("[data-wa-link]").forEach(a => (a.href = waUrl));
-    try { localStorage.setItem("volgraf_lang", currentLang); } catch (_) {}
+    try { localStorage.setItem("partkraft_lang", currentLang); } catch (_) {}
   }
   document.querySelectorAll("[data-lang-btn]").forEach(btn => {
     btn.addEventListener("click", () => applyLanguage(btn.dataset.langBtn));
@@ -335,7 +335,7 @@
   // Init: saved choice > Turkish browser > English
   document.getElementById("footer-year").textContent = new Date().getFullYear();
   let savedLang = null;
-  try { savedLang = localStorage.getItem("volgraf_lang"); } catch (_) {}
+  try { savedLang = localStorage.getItem("partkraft_lang"); } catch (_) {}
   const browserTr = (navigator.language || "").toLowerCase().startsWith("tr") ? "tr" : null;
   applyLanguage(savedLang || browserTr || "en");
   </script>

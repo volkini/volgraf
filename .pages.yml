@@ -1,12 +1,12 @@
 # ============================================================
 # Pages CMS configuration — https://app.pagescms.org
-# Log in with your GitHub account, pick the volkini/volgraf
+# Log in with your GitHub account, pick the volkini/partkraft
 # repository, and you get a WordPress-like editing panel that
 # saves straight to the site.
 # ============================================================
 media:
   input: assets/images
-  output: /volgraf/assets/images
+  output: /assets/images
 
 content:
   - name: projects

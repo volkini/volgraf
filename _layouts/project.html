@@ -41,7 +41,7 @@ layout: default
   </div>
 
   <!-- Long-form write-up (markdown body) -->
-  <div class="prose-volgraf mt-10 text-body" itemprop="text">
+  <div class="prose-partkraft mt-10 text-body" itemprop="text">
     {{ content }}
   </div>
 
@@ -63,7 +63,7 @@ layout: default
     "description": {{ page.description | default: page.title | jsonify }},
     {% if page.image %}"image": {{ page.image | absolute_url | jsonify }},{% endif %}
     "url": {{ page.url | absolute_url | jsonify }},
-    "brand": { "@type": "Brand", "name": "Volgraf" },
+    "brand": { "@type": "Brand", "name": "PartKraft" },
     "offers": {
       "@type": "Offer",
       "url": {{ page.buy_url | jsonify }},
