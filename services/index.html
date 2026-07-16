@@ -119,4 +119,45 @@ permalink: /services/
     </div>
     <a href="{{ '/contact/' | relative_url }}" class="mt-7 inline-flex items-center gap-2 bg-accent px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-ink transition-colors hover:bg-white" data-i18n="svc.cta">Request a Quote</a>
   </div>
+
+  <!-- ============ FAQ ============ -->
+  <div class="reveal mt-14">
+    <h2 class="font-mono text-xs uppercase tracking-[0.25em] text-accent" data-i18n="svc.faq">Frequently Asked Questions</h2>
+    <div class="mt-5 space-y-px border border-line bg-line">
+      <details class="group bg-panel">
+        <summary class="cursor-pointer list-none p-5 text-sm font-medium text-white transition-colors hover:text-accent" data-i18n="svc.faq1.q">How do we start a project?</summary>
+        <p class="px-5 pb-5 text-sm leading-relaxed text-body" data-i18n="svc.faq1.a">Send a short brief through the quote form — sketches, photos or existing files all work. You'll get a fixed price and timeline within 24 hours. No payment is due until we've agreed on the scope.</p>
+      </details>
+      <details class="group bg-panel">
+        <summary class="cursor-pointer list-none p-5 text-sm font-medium text-white transition-colors hover:text-accent" data-i18n="svc.faq2.q">How is my design kept confidential?</summary>
+        <p class="px-5 pb-5 text-sm leading-relaxed text-body" data-i18n="svc.faq2.a">I'm happy to sign your NDA before you share anything. Your files are never reused, shared or shown in my portfolio without written permission, and I delete them on request after the project closes.</p>
+      </details>
+      <details class="group bg-panel">
+        <summary class="cursor-pointer list-none p-5 text-sm font-medium text-white transition-colors hover:text-accent" data-i18n="svc.faq3.q">What exactly do I receive at delivery?</summary>
+        <p class="px-5 pb-5 text-sm leading-relaxed text-body" data-i18n="svc.faq3.a">Native CAD files plus neutral formats (STEP/IGES), 2D drawings as PDF and DWG/DXF where applicable, and a DFM note. All intellectual property transfers to you on final payment.</p>
+      </details>
+      <details class="group bg-panel">
+        <summary class="cursor-pointer list-none p-5 text-sm font-medium text-white transition-colors hover:text-accent" data-i18n="svc.faq4.q">How do payments work?</summary>
+        <p class="px-5 pb-5 text-sm leading-relaxed text-body" data-i18n="svc.faq4.a">Fixed-price quotes for defined scopes; larger projects are split into milestones so you only pay as agreed stages are delivered. Bank transfer and international payment platforms are both fine.</p>
+      </details>
+      <details class="group bg-panel">
+        <summary class="cursor-pointer list-none p-5 text-sm font-medium text-white transition-colors hover:text-accent" data-i18n="svc.faq5.q">What if something needs changing after delivery?</summary>
+        <p class="px-5 pb-5 text-sm leading-relaxed text-body" data-i18n="svc.faq5.a">Every project includes revisions until the agreed scope is production-ready. If an issue traces back to my design, the fix is free — no time limit, no discussion.</p>
+      </details>
+    </div>
+  </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "How do we start a project?", "acceptedAnswer": {"@type": "Answer", "text": "Send a short brief through the quote form — sketches, photos or existing files all work. You'll get a fixed price and timeline within 24 hours. No payment is due until the scope is agreed."}},
+    {"@type": "Question", "name": "How is my design kept confidential?", "acceptedAnswer": {"@type": "Answer", "text": "An NDA can be signed before anything is shared. Files are never reused, shared or shown in a portfolio without written permission, and are deleted on request after the project closes."}},
+    {"@type": "Question", "name": "What exactly do I receive at delivery?", "acceptedAnswer": {"@type": "Answer", "text": "Native CAD files plus neutral formats (STEP/IGES), 2D drawings as PDF and DWG/DXF where applicable, and a DFM note. All intellectual property transfers on final payment."}},
+    {"@type": "Question", "name": "How do payments work?", "acceptedAnswer": {"@type": "Answer", "text": "Fixed-price quotes for defined scopes; larger projects are split into milestones. Bank transfer and international payment platforms are accepted."}},
+    {"@type": "Question", "name": "What if something needs changing after delivery?", "acceptedAnswer": {"@type": "Answer", "text": "Every project includes revisions until the agreed scope is production-ready. If an issue traces back to the design, the fix is free."}}
+  ]
+}
+</script>
 </section>

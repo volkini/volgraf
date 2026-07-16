@@ -23,9 +23,9 @@ email: volkini@gmail.com
 
 # Social profiles — leave empty ("") to hide the link in the footer.
 social:
-  linkedin: ""
+  linkedin: "https://www.linkedin.com/in/vorion"
   grabcad: ""
-  instagram: ""
+  instagram: "https://www.instagram.com/partkraft"
 
 plugins:
   - jekyll-seo-tag

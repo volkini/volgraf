@@ -20,10 +20,10 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 - [ ] 2. (V) YouTube hesabi: @partkraft henuz alinmadi; Volkan mevcut premium
       "volkini" hesabini kullanmayi dusunuyor (karar bekliyor). Instagram
       @partkraft ALINDI (16 Tem).
-- [ ] 3. (V) Gecis kalani: GitHub Settings->Pages'te **Enforce HTTPS**'i isaretle
-      (sertifika hazir olunca aktiflesir); repo adini `partkraft` yap (Settings->General);
-      Pages CMS'te repoyu yeniden sec. Sonra (V+C) Google Search Console: Domain mulku
-      ekle (Cloudflare'e TXT kaydi) + https://partkraft.com/sitemap.xml gonder.
+- [ ] 3. (V) Gecis kalani: ~~Enforce HTTPS~~ ✅ (16 Tem, API'den acildi);
+      repo adini `partkraft` yap (Settings->General); Pages CMS'te repoyu
+      yeniden sec. Sonra (V+C) Google Search Console: Domain mulku ekle
+      (Cloudflare'e TXT kaydi) + https://partkraft.com/sitemap.xml gonder.
 - [ ] 4. (V) **Profil fotografi**: /about/ icin duz fonlu foto yukle
       (assets/images/volkan.jpg, Pages CMS'ten) — sayfadaki placeholder
       otomatik degisMEZ, foto gelince Claude img etiketini acacak.
@@ -42,6 +42,10 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 - [ ] 9. Reklam EN SON (site olgunlasinca). AdSense YOK — kesin karar.
 
 ### Tamamlananlar
+- [x] Guven/ulasilabilirlik paketi: Enforce HTTPS acildi (API), footer'a
+      LinkedIn (vorion) + Instagram (@partkraft) linkleri, ana sayfa Person
+      JSON-LD'ye sameAs/email/egitim eklendi, /services/'e 5 soruluk SSS
+      (EN+TR) + FAQPage JSON-LD. (16 Tem)
 - [x] CV alindi -> /about/ dolduruldu: araclar/yazilimlar chip'leri, 3 donem
       deneyim, egitim+sertifikalar, CV indirme butonu (assets/volkan-cakir-cv.pdf),
       EN+TR ceviriler. (16 Tem)
