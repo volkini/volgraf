@@ -17,8 +17,9 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 - [ ] 1. (V) **Form aktivasyonu**: /contact/ sayfasindan deneme gonderisi yap,
       volkini@gmail.com'a gelen formsubmit.co mailinde "Activate"e tikla.
       Yapilmazsa musteri mesajlari ulasmaz.
-- [ ] 2. (V) Instagram @partkraft ve YouTube @partkraft hesaplarini ac (domain alindi,
-      sosyal hesaplar bekliyor — gecikmeden!).
+- [ ] 2. (V) YouTube hesabi: @partkraft henuz alinmadi; Volkan mevcut premium
+      "volkini" hesabini kullanmayi dusunuyor (karar bekliyor). Instagram
+      @partkraft ALINDI (16 Tem).
 - [ ] 3. (V) Gecis kalani: GitHub Settings->Pages'te **Enforce HTTPS**'i isaretle
       (sertifika hazir olunca aktiflesir); repo adini `partkraft` yap (Settings->General);
       Pages CMS'te repoyu yeniden sec. Sonra (V+C) Google Search Console: Domain mulku
