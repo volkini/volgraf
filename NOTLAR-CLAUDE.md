@@ -10,7 +10,7 @@ Claude'dan bu dosyayı okuması istenir — kaldığın yerden devam etmenin yol
 
 ---
 
-## GUNCEL YAPILACAKLAR — son guncelleme: 15 Temmuz 2026
+## GUNCEL YAPILACAKLAR — son guncelleme: 16 Temmuz 2026
 
 Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 
@@ -23,8 +23,9 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
       (sertifika hazir olunca aktiflesir); repo adini `partkraft` yap (Settings->General);
       Pages CMS'te repoyu yeniden sec. Sonra (V+C) Google Search Console: Domain mulku
       ekle (Cloudflare'e TXT kaydi) + https://partkraft.com/sitemap.xml gonder.
-- [ ] 4. (V) **CV'yi Claude'a gonder** -> (C) /about/ doldurulacak: araclar/yazilimlar,
-      deneyim, foto, CV indirme butonu.
+- [ ] 4. (V) **Profil fotografi**: /about/ icin duz fonlu foto yukle
+      (assets/images/volkan.jpg, Pages CMS'ten) — sayfadaki placeholder
+      otomatik degisMEZ, foto gelince Claude img etiketini acacak.
 - [ ] 5. (V) Gercek proje gorselleri (Pages CMS'ten yukle) -> (C) vaka calismasi
       formatina gecis (problem-yaklasim-sonuc). Volkan: "en son is" dedi ama
       Upwork/musteri trafigi oncesi sart.
@@ -40,6 +41,9 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 - [ ] 9. Reklam EN SON (site olgunlasinca). AdSense YOK — kesin karar.
 
 ### Tamamlananlar
+- [x] CV alindi -> /about/ dolduruldu: araclar/yazilimlar chip'leri, 3 donem
+      deneyim, egitim+sertifikalar, CV indirme butonu (assets/volkan-cakir-cv.pdf),
+      EN+TR ceviriler. (16 Tem)
 - [x] **partkraft.com CANLI**: DNS baglandi, custom domain ayarlandi (Settings->Pages'ten
       elle gerekti, CNAME dosyasi tek basina yetmedi), HTTPS calisiyor, 8 sayfa +
       sitemap + robots 200. www -> apex 301 calisiyor. (15 Tem aksam)
@@ -211,6 +215,28 @@ kalacak, gecis tek seferde yapilacak).
 5. GrabCAD profili ac, en iyi modelleri yukle, footer'a linki ekle (_config.yml social.grabcad).
 6. LinkedIn profili (EN) kur/guncelle, siteye bagla (social.linkedin). Upwork profili ac.
 7. Reklam EN SON: site olgunlasip referans birikince konusulacak. AdSense YOK (karar).
+
+---
+
+## Oturum: 16 Temmuz 2026 (ev) - CV GELDI, ABOUT DOLDU, UPWORK TASLAGI
+
+- Fikirler reposu (volkini/Fikirler, ozel repo) eve klonlandi:
+  C:\Users\Volkan\Fikirler — CAD/CAE freelance gelir plani AKTIF.
+- Upwork profil taslagi yazildi ve CV ile tamamlandi: Fikirler reposunda
+  upwork-profili.md (baslik, 2 profil metni, 3 vaka, Fiverr gigleri, teklif
+  sablonu). YAYIN ONAYI is sozlesmesi ek is/rekabet maddesi kontrolune bagli (V).
+- /gelir slash komutu kuruldu (ev PC). Is PC icin kopya: Fikirler/komutlar/gelir.md
+  ("bu komutu kur, yollari uyarla" demek yeterli).
+- CV alindi (C:\Users\Volkan\Drive'im\WORK\CV\) -> /about/ dolduruldu (yukarida).
+  Portfolio PDF (24 sayfa) vaka gorselleri icin bekliyor; bu PC'de PDF sayfa
+  render araci yok, gorsel secimi is PC'de veya manuel yapilacak.
+- Siradaki isler: (V) form aktivasyonu, (V) @partkraft sosyal hesaplar,
+  (V) Enforce HTTPS + repo rename + Search Console, (V) sozlesme maddesi,
+  (V) profil fotografi, (C) foto gelince about'ta img acilacak.
+- NOT: partkraft.com 15 Tem'de alinmis ve site CANLIYA gecmis (is PC oturumu) —
+  bu oturumdaki rebase sirasinda ogrenildi, notlar birlestirildi.
+
+---
 
 - DUZELTME (14 Tem): Iletisim e-postasi volkini@gmail.com olarak degistirildi
   (volkan@aykimaluminium.com DEGIL). Form aktivasyon maili gmail'e gelecek.
