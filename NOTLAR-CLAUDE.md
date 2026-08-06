@@ -10,13 +10,18 @@ Claude'dan bu dosyayı okuması istenir — kaldığın yerden devam etmenin yol
 
 ---
 
-## GUNCEL YAPILACAKLAR — son guncelleme: 16 Temmuz 2026
+## GUNCEL YAPILACAKLAR — son guncelleme: 6 Agustos 2026
+
+> ⚡ **ACIL NAKIT MODU ACIK.** Gelir kaynagi batti. Site isleri artik ikinci
+> oncelikte — birinci oncelik gelir plani FAZ 0 (Fikirler reposu:
+> `adim-adim.md` -> FAZ 0). Buradaki 1. madde hala en kritik site isi.
 
 Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 
 - [ ] 1. (V) **Form aktivasyonu**: /contact/ sayfasindan deneme gonderisi yap,
       volkini@gmail.com'a gelen formsubmit.co mailinde "Activate"e tikla.
-      Yapilmazsa musteri mesajlari ulasmaz.
+      Yapilmazsa musteri mesajlari ulasmaz. **ACIL MODDA KRITIK** — doğrudan
+      erisim kampanyasi site linkini paylasacak, form calismiyor olamaz.
 - [ ] 2. (V) YouTube hesabi: @partkraft henuz alinmadi; Volkan mevcut premium
       "volkini" hesabini kullanmayi dusunuyor (karar bekliyor). Instagram
       @partkraft ALINDI (16 Tem).
@@ -27,9 +32,12 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 - [ ] 4. (V) **Profil fotografi**: /about/ icin duz fonlu foto yukle
       (assets/images/volkan.jpg, Pages CMS'ten) — sayfadaki placeholder
       otomatik degisMEZ, foto gelince Claude img etiketini acacak.
-- [ ] 5. (V) Gercek proje gorselleri (Pages CMS'ten yukle) -> (C) vaka calismasi
-      formatina gecis (problem-yaklasim-sonuc). Volkan: "en son is" dedi ama
-      Upwork/musteri trafigi oncesi sart.
+- [ ] 5. (V) **Vaka gorsel onayi** — 4 gercek vaka sayfasi 6 Agu'da YAZILDI ve
+      yayinda; sadece gorseller eksik. Anonimlik kontrolu yapildi: Fikirler
+      reposundaki `vaka-gorselleri/sayfa-03.png` (CNC render + saha fotografi)
+      ve `sayfa-19.png` (tool life fatigue) TEMIZ. "Onay" de, (C) kirpip
+      assets/images/ altina koysun. PPAP vakasi icin ayrica: karartilmis
+      kontrol plani + PFMEA ekran goruntusu.
 - [ ] 6. (V) GrabCAD profili ac + en iyi modelleri yukle -> (C) footer'a link
       (_config.yml -> social.grabcad).
 - [ ] 7. (V) LinkedIn profili (EN) -> (C) profil metinlerini yazar, siteye baglar
@@ -42,6 +50,9 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 - [ ] 9. Reklam EN SON (site olgunlasinca). AdSense YOK — kesin karar.
 
 ### Tamamlananlar
+- [x] **Uydurma baslangic projeleri silindi, 4 GERCEK vaka sayfasi yayinda**:
+      CNC fikstur+CAM (+%35), pres kalibi FEA (-%80), proses ekipmani CFD,
+      50+ PPAP. Bos /shop/ menu linki otomatik gizlendi. (6 Agu)
 - [x] Guven/ulasilabilirlik paketi: Enforce HTTPS acildi (API), footer'a
       LinkedIn (vorion) + Instagram (@partkraft) linkleri, ana sayfa Person
       JSON-LD'ye sameAs/email/egitim eklendi, /services/'e 5 soruluk SSS
