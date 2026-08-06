@@ -99,7 +99,7 @@
       <div class="hidden items-center gap-7 md:flex">
         <a href="{{ '/services/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint transition-colors hover:text-accent" data-i18n="nav.services">Services</a>
         <a href="{{ '/projects/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint transition-colors hover:text-accent" data-i18n="nav.projects">Projects</a>
-        <a href="{{ '/shop/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint transition-colors hover:text-accent" data-i18n="nav.shop">3D Files</a>
+        {% assign shop_items = site.projects | where: "category", "shop" %}{% if shop_items.size > 0 %}<a href="{{ '/shop/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint transition-colors hover:text-accent" data-i18n="nav.shop">3D Files</a>{% endif %}
         <a href="{{ '/about/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint transition-colors hover:text-accent" data-i18n="nav.about">About</a>
         <a href="{{ '/contact/' | relative_url }}" class="bg-accent px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-ink transition-colors hover:bg-white" data-i18n="nav.quote">Get a Quote</a>
         <div class="flex items-center gap-1 border border-line px-1 py-1" role="group" aria-label="Language">
@@ -129,7 +129,7 @@
       <div class="flex flex-col gap-4">
         <a href="{{ '/services/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint hover:text-accent" data-i18n="nav.services">Services</a>
         <a href="{{ '/projects/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint hover:text-accent" data-i18n="nav.projects">Projects</a>
-        <a href="{{ '/shop/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint hover:text-accent" data-i18n="nav.shop">3D Files</a>
+        {% assign shop_items_m = site.projects | where: "category", "shop" %}{% if shop_items_m.size > 0 %}<a href="{{ '/shop/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint hover:text-accent" data-i18n="nav.shop">3D Files</a>{% endif %}
         <a href="{{ '/about/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-faint hover:text-accent" data-i18n="nav.about">About</a>
         <a href="{{ '/contact/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-accent hover:text-white" data-i18n="nav.quote">Get a Quote</a>
       </div>
