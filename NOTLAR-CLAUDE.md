@@ -341,3 +341,31 @@ gorevleri (form aktivasyonu, About/CV) bu plana hizmet ediyor - oncelik korunuyo
 - Push sonrasi: GitHub Settings -> Pages -> Enforce HTTPS; repo adi partkraft olarak
   degistirilecek (V, GitHub Settings); Pages CMS'te repo yeniden secilecek;
   Search Console kaydi.
+
+---
+
+## Oturum: 6 Agustos 2026 (is bilgisayari) - GERCEK VAKALAR + ACIL NAKIT MODU
+
+**Baglam:** Volkan'in gelir kaynagi batti, alacagi takildi. Hizli gelir
+gerekiyor. Gelir plani (Fikirler reposu) acil moda alindi - detay orada,
+buraya kopyalanmaz.
+
+### Sitede yapilanlar
+- **Uydurma baslangic projeleri SILINDI** (golf tee, solunum cihazi, bagaj
+  sabitleyici, telefon kilifi). Bunlar ilk demo icin uretilmis kurgu
+  ornekleriydi; hizmet satan bir sitede ciddi guven riskiydi.
+- **4 gercek vaka sayfasi eklendi** (problem->yaklasim->sonuc, EN, SEO
+  etiketli, /contact/'a CTA'li):
+  - /projects/cnc-fixture-cam-throughput/ - CNC hucresi +%35
+  - /projects/press-die-fatigue-fea/ - pres kalibi yorulma -%80
+  - /projects/cfd-process-equipment/ - proses ekipmani CFD (premium katman
+    vitrini; site daha once CFD icin hicbir sey gostermiyordu)
+  - /projects/ppap-apqp-documentation/ - 50+ PPAP paketi
+  Isveren adi hicbirinde gecmiyor (anonimlik kurali).
+- **Bos /shop/ menu linki otomatik gizlendi** - ilk STL eklenince geri gelir.
+
+### Bekleyen (V)
+- Vaka gorselleri: anonimlik kontrolu yapildi, sayfa-03 ve sayfa-19 TEMIZ.
+  "Onay" denince (C) kirpip assets/images/ altina ekler. Dosyalar Fikirler
+  reposunda vaka-gorselleri/ klasorunde.
+- PPAP vakasi icin: karartilmis kontrol plani + PFMEA ekran goruntusu.
