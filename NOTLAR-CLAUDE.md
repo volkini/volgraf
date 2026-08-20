@@ -380,3 +380,46 @@ buraya kopyalanmaz.
   "Onay" denince (C) kirpip assets/images/ altina ekler. Dosyalar Fikirler
   reposunda vaka-gorselleri/ klasorunde.
 - PPAP vakasi icin: karartilmis kontrol plani + PFMEA ekran goruntusu.
+
+---
+
+## Oturum: 20-21 Agustos 2026 (ev) - DRIVE ARSIVI TARANDI + 10 FREELANCE VAKASI
+
+### Kaynaklar birlestirildi
+- Google Drive `G:` olarak bagli; `Drive'im/FREE/` = freelance arsivi:
+  55 proje klasoru, 2.508 SLDPRT, 655 SLDASM, 159 SLDDRW, 652 STEP, 1.583 gorsel.
+- `FREE/2026/Jobs.xlsx` = is kayit defteri: 35 is, Eki 2024 - Nis 2026 (ucret+sure+tarih).
+  (2025/Jobs.xlsx bunun eski kopyasi.)
+- George WhatsApp yazismasi (Mar 2023 - Agu 2026, 9.967 mesaj) medyasiz disa aktarildi,
+  Drive ana dizininden alindi. Icinden **71 yapilandirilmis musteri brief'i** ayiklandi.
+  Ham dosyalar repoya GIRMEDI (yerel scratchpad'de).
+- Envanter tablosu: `C:\Claude Files\ENVANTER.md`.
+
+### Siteye eklenen 10 vaka (hepsi ANONIM - musteri/marka adi yok, ucret yok)
+1. Vakum yalitimli cift tank (termal batarya) - 2025-07
+2. BS EN 124-3 havalandirmali kanal kapagi - 2025-10
+3. Takip kamerasi muhafazasi (PCB+termal+batarya) - 2025-01
+4. Ince cuzdan plastik ic parcasi (enjeksiyon, 10 mm) - 2026-03
+5. 7075-T6 kesirli disli kart zincir dislisi ailesi (13 adet) - 2024-12
+6. Akilli tost makinesi modulu (baskidan sac metale) - 2025-03
+7. Toplanabilir taktik kopek tasmasi - 2025-08
+8. Golf cantasi yapisi + imalat resimleri - 2025-10
+9. Tasinabilir matara su filtresi + huni - 2025-07
+10. Antika dart skor tablosu (tersine muhendislik, metal imalat) - 2025-05
+
+Her sayfa: problem -> yaklasim -> sonuc, SEO tag'leri, gercek tarih, kapak render'i.
+Gorseller Drive'daki proje render'larindan kirpildi -> `assets/images/case-*.jpg`
+(1400x933, ~30-80 KB). Ana sayfa og:image de gercek render'lardan uretildi
+(`assets/images/og-partkraft.jpg`).
+
+### KASITLI OLARAK ATLANAN
+- **Servo tracking machine ($625, en yuksek ikinci is)**: yazismada bunun bir
+  YouTube kanalindan tersine muhendislik edilen, pnomatik tetik mekanizmali
+  hedef takip duzenegi oldugu goruluyor; Volkan yasal nedenle atesli silah
+  parcasini CAD'e koymayi reddetmis. Hizmet satan bir sitede vitrine konmasi
+  itibar riski - vaka yapilmadi. Karar Volkan'a birakildi.
+
+### Bekleyen
+- Eski isverene ait 4 vakanin gorselleri (Fikirler/vaka-gorselleri/sayfa-03.png,
+  sayfa-19.png) HALA "Onay" bekliyor - bu oturumda bilerek eklenmedi.
+  sayfa-03 kontrol edildi: firma adi/logo yok, temiz gorunuyor.
