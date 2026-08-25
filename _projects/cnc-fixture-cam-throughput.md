@@ -3,14 +3,10 @@ title: "CNC Machining Cell: +35% Output with Fixture and CAM Redesign"
 description: "A bottlenecked CNC cell was rebuilt around new workholding fixtures and optimised CAM programs — 35% more parts per shift on the same machine, same operator."
 summary_tr: "Darboğaz olan CNC hücresi; yeni bağlama aparatları ve optimize CAM programlarıyla aynı tezgâh ve aynı operatörle vardiya başına %35 daha fazla parça üretir hale getirildi."
 date: 2026-07-20
+image: /assets/images/case-cnc-cell.jpg
 category: portfolio
 tags: [CNC fixture design, workholding, CAM programming, jig and fixture design, machining throughput, aluminium profile machining, setup reduction]
 ---
-
-<!-- GÖRSEL (Volkan onayı bekliyor): Fikirler/vaka-gorselleri/sayfa-03.png —
-     çift kafalı CNC render + gerçek saha fotoğrafı. En güçlü güven görseli.
-     Onaylanınca: assets/images/case-cnc-cell.jpg olarak eklenip
-     üst front matter'a `image: /assets/images/case-cnc-cell.jpg` satırı konur. -->
 
 A double-head CNC machining cell for aluminium profiles was the bottleneck of the
 line. The machine was not the limit — the way parts were held and cut was.

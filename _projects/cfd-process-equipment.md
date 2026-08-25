@@ -3,13 +3,10 @@ title: "CFD for Process Equipment: Cooling Tunnels, Coating Booths and Cyclones"
 description: "Flow and thermal CFD on production equipment — cooling tunnels, powder coating booths and cyclone separators — turning airflow guesswork into measured design decisions."
 summary_tr: "Üretim ekipmanlarında akış ve termal CFD analizleri: soğutma tünelleri, toz boya kabinleri ve siklon ayırıcılar — hava akışındaki tahmini ölçülebilir tasarım kararına çevirmek."
 date: 2026-07-05
+image: /assets/images/case-cfd-flow.jpg
 category: portfolio
 tags: [CFD analysis, Ansys Fluent, Star-CCM+, thermal analysis, airflow simulation, cyclone separator, powder coating booth, process equipment design]
 ---
-
-<!-- GÖRSEL (Volkan onayı bekliyor): Fikirler/vaka-gorselleri/sayfa-20.png
-     (soğutma tüneli + toz boya kabini akış çizgileri — CFD vitrini için birincil)
-     veya sayfa-21.png (siklon, 3 kare). → assets/images/case-cfd.jpg -->
 
 Process equipment is where airflow assumptions get expensive. A cooling tunnel
 that is 20% short does not announce itself — it shows up months later as

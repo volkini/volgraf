@@ -3,14 +3,13 @@ title: "50+ Automotive PPAP Packages Approved (IATF 16949 / VDA)"
 description: "Control plans, PFMEAs, MSA studies and dimensional reports for 50+ automotive projects — remote PPAP and APQP documentation for suppliers who lose contracts over paperwork, not parts."
 summary_tr: "50+ otomotiv projesi için kontrol planları, PFMEA, MSA çalışmaları ve boyutsal raporlar — parçası yüzünden değil evrakı yüzünden iş kaybeden tedarikçiler için uzaktan PPAP/APQP dokümantasyonu."
 date: 2026-06-28
+image: /assets/images/case-ppap-tooling.jpg
 category: portfolio
 tags: [PPAP documentation, APQP, PFMEA, control plan, IATF 16949, VDA, MSA study, automotive supplier, quality documentation]
 ---
 
-<!-- GÖRSEL (Volkan'dan bekleniyor): kendi şablonlarından 1 kontrol planı +
-     1 PFMEA sayfası, müşteri/parça verisi KARARTILMIŞ ekran görüntüsü.
-     Yoksa sayfa-10.png'deki kalıp render'ı (otomotiv bağlamı kurar).
-     → assets/images/case-ppap.jpg -->
+<!-- Kapak simdilik pres kalibi render'i (otomotiv baglami). Volkan karartilmis
+     kontrol plani + PFMEA ekran goruntusu gonderince onunla degistirilecek. -->
 
 Suppliers rarely lose an automotive contract because the part is wrong. They
 lose it because the submission package is late, incomplete, or fails the

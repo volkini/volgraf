@@ -3,13 +3,10 @@ title: "Press Tooling: 80% Fewer Fatigue Failures After FEA-Driven Redesign"
 description: "Recurring fatigue cracks in press die components were stopping the line. Ansys FEA located the stress concentrations; redesigned geometry and heat treatment cut fatigue failures by 80%."
 summary_tr: "Pres kalıbı bileşenlerindeki tekrarlayan yorulma çatlakları hattı durduruyordu. Ansys FEA ile gerilme yığılmaları bulundu; yeni geometri ve ısıl işlem reçetesiyle yorulma kaynaklı arızalar %80 azaldı."
 date: 2026-07-12
+image: /assets/images/case-press-die-fea.jpg
 category: portfolio
 tags: [press die design, FEA fatigue analysis, Ansys, stamping die, tooling design, tool life, DFM, metal forming]
 ---
-
-<!-- GÖRSEL (Volkan onayı bekliyor): Fikirler/vaka-gorselleri/sayfa-19.png
-     ("Tool life fatigue analysis" — kapak adayı) veya sayfa-10.png / sayfa-22.png
-     (pres kalıbı render + FEA konturları). Onaylanınca assets/images/case-press-die.jpg -->
 
 Press die components in an aluminium extrusion and metal forming operation kept
 cracking in service. Each failure meant an unplanned line stop and another

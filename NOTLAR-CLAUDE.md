@@ -32,12 +32,10 @@ Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 - [ ] 4. (V) **Profil fotografi**: /about/ icin duz fonlu foto yukle
       (assets/images/volkan.jpg, Pages CMS'ten) — sayfadaki placeholder
       otomatik degisMEZ, foto gelince Claude img etiketini acacak.
-- [ ] 5. (V) **Vaka gorsel onayi** — 4 gercek vaka sayfasi 6 Agu'da YAZILDI ve
-      yayinda; sadece gorseller eksik. Anonimlik kontrolu yapildi: Fikirler
-      reposundaki `vaka-gorselleri/sayfa-03.png` (CNC render + saha fotografi)
-      ve `sayfa-19.png` (tool life fatigue) TEMIZ. "Onay" de, (C) kirpip
-      assets/images/ altina koysun. PPAP vakasi icin ayrica: karartilmis
-      kontrol plani + PFMEA ekran goruntusu.
+- [x] 5. TAMAM (21 Agu) — eski isveren vakalarinin kapaklari eklendi; artik
+      14 vakanin 14'unde de gorsel var. BEKLEYEN tek sey: PPAP vakasi icin
+      karartilmis kontrol plani + PFMEA ekran goruntusu (V). Gelene kadar
+      o sayfada gecici olarak pres kalibi render'i duruyor.
 - [ ] 6. (V) GrabCAD profili ac + en iyi modelleri yukle -> (C) footer'a link
       (_config.yml -> social.grabcad).
 - [ ] 7. (V) LinkedIn profili (EN) -> (C) profil metinlerini yazar, siteye baglar
@@ -423,3 +421,25 @@ Gorseller Drive'daki proje render'larindan kirpildi -> `assets/images/case-*.jpg
 - Eski isverene ait 4 vakanin gorselleri (Fikirler/vaka-gorselleri/sayfa-03.png,
   sayfa-19.png) HALA "Onay" bekliyor - bu oturumda bilerek eklenmedi.
   sayfa-03 kontrol edildi: firma adi/logo yok, temiz gorunuyor.
+
+---
+
+## Oturum: 21 Agustos 2026 (ev) - ESKI VAKA GORSELLERI EKLENDI
+
+Volkan "Onay" dedi; Fikirler/vaka-gorselleri slaytlarindaki paneller kirpilip
+PartKraft koyu zemininde (#0C0C0E) montajlandi, assets/images/ altina kondu:
+
+- case-cnc-cell.jpg       <- sayfa-03 (talas kaldirma fotografi + saha fotografi)
+- case-press-die-fea.jpg  <- sayfa-19 (tool life fatigue FEA)
+- case-cfd-flow.jpg       <- sayfa-20 (sogutma tuneli CAD + dinamik basinc konturu)
+- case-ppap-tooling.jpg   <- sayfa-10 (iki pres kalibi render'i) -- GECICI
+
+Uretim betigi: scratchpad/kapak.py (panel koordinatlari + varyans tabanli otomatik
+kirpma; beyaz slayt zemini ve cerceve otomatik atiliyor).
+
+Kullanilmayan slaytlar ileride ise yarayabilir: sayfa-04 (CNC V02 render),
+sayfa-09 (cift kafali capak alma makinesi - AYRI BIR VAKA OLABILIR),
+sayfa-21 (siklon CFD), sayfa-22 (denizalti kablo/boru sabitleme ROV).
+
+Anonimlik: dort slaytin tamami gozle kontrol edildi - firma adi, logo veya
+musteri verisi yok.
