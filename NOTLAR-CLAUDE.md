@@ -443,3 +443,47 @@ sayfa-21 (siklon CFD), sayfa-22 (denizalti kablo/boru sabitleme ROV).
 
 Anonimlik: dort slaytin tamami gozle kontrol edildi - firma adi, logo veya
 musteri verisi yok.
+
+---
+
+## Oturum: 21 Agustos 2026 (ev) - 33 FREELANCE VAKASI DAHA EKLENDI
+
+Volkan A listesinden 7/17/20 haric hepsini, B listesinden 25/27 haric hepsini,
+ayrica 36/40/41 ve servo tracking'i sectti. Sonuc: **sitede toplam 47 vaka.**
+
+### Onemli tespitler (arsiv/yazisma capraz kontrolu)
+- "Wireless charge" ve "charge box and battery" AYNI isin iki klasoru
+  (UV sterilizeli sarj ussu + power bank). Tek vaka olarak birlestirildi -> 33 vaka.
+- "Mask project" astim inhaleri DEGIL, **uyku maskesi** (karbon burun kemeri +
+  yapiskan burun bandiyla hizalanan miknatislar, S/M/L). Ilk esleme yanlisti,
+  render'lardan yakalandi.
+- "toilet" klasoru = **katlanabilir kamp tuvaleti** (2024), 2025'teki klozet
+  kapagi kaldirici DEGIL.
+- "Coat Hanger" = dallari katlanan palmiye portmanto.
+- "Flag" = LED aydinlatmali bayrak cercevesi (NITE FLAG XL tipi), 180 derece
+  cevirme mekanizmasi degil.
+- "Space trap" = **Passive Stability Lock (PSL)**, mikrogravite ortami icin
+  bot sabitleme sistemi. Klasordeki `PSL Summary.pdf` tam teknik tanim iceriyor
+  (O101.6x38.1 mm kaset, helis kam, flux shunt, N-S-N neodyum dizi, 6 mm bezel
+  strogu, uretan O-ring damper). Vaka bu dokumana gore yazildi. GORSELI YOK -
+  sitedeki tek gorselsiz vaka.
+
+### Anonimlik
+Yazismada gecen musteri marka adlari (Ollico, Venga Vita, holdertackle.com,
+MosaicFit, KLEEN, SmartSip, KAZE vb.) hicbir sayfada KULLANILMADI. Ucret bilgisi
+de hicbir yerde yok - Volkan'in talimati.
+
+### Uretim betikleri (scratchpad, repoya girmez)
+- `cikar.py`   : proje bazli yazisma ayiklama -> det/*.txt
+- `gorsel_bul.py`: klasorlerdeki render adaylarini listeler
+- `kapak2.py` / `kapak3.py`: kapak gorseli uretimi (1400x933, 3:2)
+- `dogrula.py` : tum vakalarin front matter + gorsel yolu dogrulamasi
+
+### Kalan / ileride
+- PPAP vakasi icin karartilmis kontrol plani + PFMEA ekran goruntusu (V).
+- PSL (Space trap) icin gorsel: CAD var, render yok - istenirse uretilebilir.
+- Arsivde eklenmeyen ~12 proje kaldi (Dab silicone Mat, Razor, Speaker,
+  Diamond, Pottery, Bottle of rings, dropper, nau iphone, Siliconne flask,
+  skeleton, cancelled, Wireless charge'in ayri klasoru).
+- Portfolyo slaytlarindan: sayfa-09 (cift kafali capak alma makinesi) ve
+  sayfa-22 (denizalti kablo/boru ROV) ayri vaka olabilir.
