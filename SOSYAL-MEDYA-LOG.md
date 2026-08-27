@@ -1,27 +1,42 @@
-# PartKraft içerik kanalları — yayın kaydı
+# PartKraft Instagram — yayın kaydı
 
-`social-media-manager` Claude skill'i tarafından tutulur. Bilim-teknoloji
-içerik kanallarının (EN + TR) yayınlanan/zamanlanan her içeriği buraya
-eklenir — **en yeni en üstte**. Dosya bu repoda yalnızca iki bilgisayar
+`social-media-manager` Claude skill'i tarafından tutulur. Yayınlanan her gönderi
+buraya eklenir — **en yeni en üstte**. Dosya bu repoda yalnızca iki bilgisayar
 arasında git senkronu için durur (Jekyll exclude'da, siteyle ilgisi yok).
 Her kayıttan sonra commit + push yapılır.
+
+> **Not (28 Ağu 2026):** Hesabın amacı değişti. Eskiden planlanan "bilim-teknoloji
+> içerik kanalı" fikri 16 Tem'de rafa kalkmıştı; bu dosya artık **PartKraft marka
+> hesabının** kaydını tutuyor — Volkan'ın gerçek mühendislik işlerini yayınlayan,
+> müşteri kazanmayı hedefleyen hesap.
 
 **Kayıt formatı:**
 
 ```
-## 2026-07-20 — EN — YouTube Shorts
-- **Konu:** JWST mirror alignment precision
-- **Durum:** published | scheduled (2026-07-22T18:00Z) | failed | taslak
-- **Metin/başlık (ilk satır):** James Webb's Mirrors Are Aligned to 10 Nanometers...
-- **Görsel/video:** Blotato AI video (id: ...)
-- **Canlı URL:** https://youtube.com/shorts/...
-- **postSubmissionId:** abc-123
+| Tarih | No | Tür | Konu | Canlı URL |
 ```
-
-`scheduled` kayıtların canlı URL'si sonradan doldurulur — her oturum başında
-zamanı geçmiş bekleyen kayıtları kontrol et, URL'leri işle, hataları raporla.
-Konu tekrarını önlemek için yeni hafta planlanırken bu dosya taranır.
 
 ---
 
-*(Henüz yayınlanmış içerik yok.)*
+## Yayınlananlar
+
+| Tarih | No | Tür | Konu | Canlı URL |
+|---|---|---|---|---|
+| — | — | — | henüz yayın yok | — |
+
+---
+
+## Hazır bekleyen parti — Parti 1 (28 Ağu 2026)
+
+Dört karusel, yirmi kare. Görseller ve altyazılar üretildi, **yayın için Instagram
+Graph API kurulumu bekleniyor** (bkz. skill'deki `references/instagram-setup.md`).
+Kurulum bitene kadar elle de yüklenebilir.
+
+| No | Tür | Konu | Kare |
+|---|---|---|---|
+| 01 | CASE FILE | Vakum yalıtımlı çift tank — yalıtım ile iletimin yan yana çözümü | 5 |
+| 02 | SHOP NOTE | Kenarı bitirmenin üç yolu: keskin / pah / radyus | 5 |
+| 03 | CASE FILE | Cüzdan iç parçası — canlı menteşeye neden "hayır" dendiği | 5 |
+| 04 | SHOP NOTE | Aynı delik, üç farklı çağrı: düz / havşa / konik havşa | 5 |
+
+Önerilen sıra 01 → 02 → 03 → 04, haftada üç gönderi (Pzt / Çar / Cum).

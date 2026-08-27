@@ -556,3 +556,56 @@ kazara noindex yok. robots.txt sitemap'e dogru isaret ediyor.
 2. Fiyat/sure cipasi (ziyaretci kendini eleyemiyor).
 3. Vaka metinlerinin sablon hissini kirmak (vitrindeki 6-8 tanesi).
 4. 1 hafta sonra Search Console "Sayfalar" raporu kontrolu.
+
+---
+
+## Oturum: 28 Agustos 2026 (ev) - LOGO YENILENDI + INSTAGRAM SISTEMI KURULDU
+
+### Logo
+Eski marka GD&T "gercek konum" sembolüydü ama 1 px cizgiyle: 22 px'te saç teli,
+favicon'da bos daire. Yenisi: **pahli/radyuslu plaka + havsali delik** (dolu
+kutle, her boyutta okunuyor). Navbar, favicon.svg ve apple-touch-icon guncellendi.
+PNG seti uretildi (turuncu/siyah/beyaz saydam + koyu zeminli ikon + Instagram
+1080). Uretim betigi: skill'de `scripts/brand-assets.py`.
+Alternatifler artifact olarak sunulmustu: claude.ai/code/artifact/601ee439-8212-4c1b-8932-b511cf242eb9
+
+### Instagram sistemi
+`social-media-manager` skill'i **bastan yazildi**. Eski hali rafa kalkan
+"bilim-teknoloji icerik kanali" fikri icindi; artik **PartKraft marka hesabini**
+yonetiyor: gercek isleri yayinlayip musteri kazanmak.
+
+Kurulanlar:
+- `scripts/template.py` — 1080x1350 karusel sablonu (koyu zemin, blueprint
+  izgarasi, antet seridi, turuncu vurgu, Fraunces + DM Mono). Fontlar skill
+  klasorunde; siteyle birebir ayni gorsel dil.
+- Cizim fonksiyonlari: `corners` (keskin/pah/radyus), `bore` (duz/havsa/konik
+  havsa) — shop note gonderileri icin render gerekmiyor.
+- `references/brand-voice.md` — ses, uc icerik sutunu, altyazi sekli, yasaklar.
+- `references/instagram-setup.md` — Graph API kurulumu ve yayin akisi.
+- `SOSYAL-MEDYA-LOG.md` yeni amaca gore bastan yazildi.
+
+**Kararlar (Volkan "sen karar ver" dedi):**
+- Dil: **Ingilizce** (alici ABD/Avrupa).
+- Format: **karusel**, 5 kare, 1080x1350. Kaydetme oranini karuseller yukseltiyor.
+- Tempo: **haftada 3** (Pzt/Car/Cum).
+- Icerik: yarisi **shop note** (uretim dersi), yarisi **case file** (gercek is).
+  Hesap sattigindan cok ogretmeli — takipci shop note'lardan gelir, musteri case
+  file'dan.
+- Yayin yolu: **Instagram Graph API** (ucretsiz, resmi, aracisiz). Blotato
+  dosyalari yedek olarak duruyor.
+- Onay: **parti bazinda onay**, gonderi basina degil. Tam otomatik yayin ilk
+  partiler basarili gectikten sonra konusulacak.
+
+### Parti 1 hazir (yayin bekliyor)
+4 karusel / 20 kare uretildi + altyazilar. Yerel: scratchpad/ig/ (oturumluk).
+Kalicilastirmak icin: `assets/social/parti-01/` altina koyup repoya almak
+gerekir — Graph API zaten gorselleri public HTTPS URL'den cekiyor, yani bu hem
+arsiv hem yayin kaynagi olur.
+
+### BEKLEYEN (V)
+1. Instagram hesabini **Professional/Business**'a cevir + Facebook sayfasi ac +
+   baglama (instagram-setup.md adim 1-3).
+2. Meta developer app + uzun omurlu token + IG user id -> Claude'a ver.
+3. Sozlesmedeki ek is maddesi hala kontrol edilmedi. Instagram siteden cok daha
+   gorunur; hesap "portfolyo vitrini" tonunda tutuluyor, acik hizmet reklami
+   YAPILMIYOR - bu bilincli.
