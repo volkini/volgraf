@@ -510,3 +510,49 @@ ayni sablonda, 47 tanede sablon gorunur oluyor; (5) render'lar hep ayni gri
 SolidWorks studyo gorunumu; (6) fiyat/sure cipasi yok; (7) proje sayfalarinda
 DWG numarasi slug'dan kesiliyor ("DWG NO. MICROGRAVITY-F") - estetigi bozuyor;
 (8) Tailwind CDN'den yukleniyor (Lighthouse puani).
+
+---
+
+## Oturum: 27 Agustos 2026 (ev) - FORM, FOTO, YENI GOREV, SEARCH CONSOLE
+
+### Tamamlananlar
+- **Form**: aktive edildi + artik token endpoint'ine POST ediyor
+  (`formsubmit.co/19607a456c30216cacd2228b7ecd9cf6`). E-posta adresi form
+  kaynagindan kalkti. Token `_config.yml` -> `formsubmit_token`. Test edildi,
+  calisiyor.
+- **Profil fotografi**: Gemini ile uretildi (Volkan'in kendi fotograflarindan,
+  kimlik korunarak). `assets/images/volkan.jpg` (840x1120, 118 KB) siteye kondu,
+  /about/ placeholder'i kalkti. Ana sayfa Person JSON-LD'ye `image` eklendi.
+  LinkedIn icin kare kirpim ayrica uretildi (928x928, scratchpad).
+- **Yeni gorev**: KC Metal, Ar-Ge Muduru, Mart 2025'ten beri, Aydin, 9 kisilik
+  ekip. /about/ kronolojisi ikiye bolundu: 2025-Present (KC Metal, sirket adi
+  sitede YAZILMADI) + 2017-2025 (onceki gorev, %80/%35/50+ PPAP rakamlariyla).
+  EN+TR ceviriler eklendi. LinkedIn metinleri de yazildi (pozisyon, headline,
+  About bolumu, duyuru postu).
+- **Google Search Console**: Domain tipi mulk, DNS TXT ile dogrulandi (Google
+  Cloudflare'e otomatik ekledi). sitemap.xml gonderildi -> Basarili, 54 sayfa.
+  Onemli URL'ler elle dizine eklenmek uzere gonderildi.
+- **Bing Webmaster Tools**: "Import from Google Search Console" ile aktarildi.
+- **SEO duzeltmeleri**: jekyll-seo-tag'in her basliga ekledigi "| PartKraft"
+  kaldirildi (`{% seo title=false %}` + kendi title etiketimiz; marka sadece
+  ana sayfada). Hizmetler basligi 90 -> 36 karakter. /thanks/ sayfasina
+  noindex eklendi (layout'a `page.noindex` destegi kondu).
+
+### Kontrol edilip TEMIZ cikanlar
+Yonlendirmeler tek adimli 301 (http, www, https://www, eski github.io -> apex).
+Canonical'lar kendine referansli ve sitemap adresleriyle birebir. Hicbir sayfada
+kazara noindex yok. robots.txt sitemap'e dogru isaret ediyor.
+
+### Bilerek yapilmayanlar
+- 47 vakanin 25'inin basligi hala 60 karakteri asiyor. Anahtar kelime basta
+  oldugu icin kesilen kisim onemsiz kuyruk; toplu yeniden yazmanin getirisi dusuk
+  gorundu. Istenirse yapilir.
+- LinkedIn About'a "partkraft.com / freelance" satiri EKLENMEDI - is sozlesmesi
+  ek is maddesi kontrolu hala bekliyor (madde 7).
+
+### Siradaki oneriler (oncelik sirasi)
+1. Projelere kategori filtresi (47 vaka duz liste, ziyaretci uzmanlik alanini
+   cikaramiyor) + ana sayfaya "secilmis 6 vaka".
+2. Fiyat/sure cipasi (ziyaretci kendini eleyemiyor).
+3. Vaka metinlerinin sablon hissini kirmak (vitrindeki 6-8 tanesi).
+4. 1 hafta sonra Search Console "Sayfalar" raporu kontrolu.
