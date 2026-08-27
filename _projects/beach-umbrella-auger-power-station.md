@@ -5,6 +5,7 @@ summary_tr: "Kumda kendi kendine vidalanan, şemsiye taşıyan ve telefon şarj 
 date: 2024-07-05
 image: /assets/images/case-beach-umbrella-auger.jpg
 category: portfolio
+discipline: machine
 tags: [consumer product design, injection molding design, gearbox packaging, outdoor product design, battery powered device, mechanism design, DFM, product engineering]
 ---
 

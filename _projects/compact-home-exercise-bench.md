@@ -5,6 +5,7 @@ summary_tr: "Küçük dairelere göre tasarlanmış katlanabilir egzersiz bench'
 date: 2025-06-15
 image: /assets/images/case-home-exercise-bench.jpg
 category: portfolio
+discipline: product
 tags: [consumer product design, fitness equipment design, folding mechanism, structural design, home gym product, DFM consumer goods, product rendering, technical drawings]
 ---
 

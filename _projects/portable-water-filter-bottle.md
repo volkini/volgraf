@@ -5,6 +5,7 @@ summary_tr: "İçerken filtreleyen matara filtresi: demleme haznesi aynı anda �
 date: 2025-07-14
 image: /assets/images/case-portable-water-filter.jpg
 category: portfolio
+discipline: product
 tags: [consumer product design, water filter design, injection molding design, food safe product design, outdoor gear design, product concept to CAD, silicone part design, DFM]
 ---
 

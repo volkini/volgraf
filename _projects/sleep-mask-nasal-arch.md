@@ -5,6 +5,7 @@ summary_tr: "Dışarıdan sıradan görünen, içinde karbon burun kemeri taşı
 date: 2025-08-26
 image: /assets/images/case-sleep-mask-nasal-arch.jpg
 category: portfolio
+discipline: product
 tags: [soft goods design, wearable product design, technical drawings for manufacturer, sewing specification, magnet integration, sleep product design, product development, CAD for textiles]
 ---
 

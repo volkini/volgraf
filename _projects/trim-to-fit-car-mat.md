@@ -5,6 +5,7 @@ summary_tr: "Delik hattından kesilerek her araca uyarlanan universal kauçuk pa
 date: 2025-03-21
 image: /assets/images/case-universal-car-mat.jpg
 category: portfolio
+discipline: moulding
 tags: [automotive accessory design, rubber molding design, universal product design, drainage channel design, consumer product CAD, DFM, aftermarket product, injection molding]
 ---
 

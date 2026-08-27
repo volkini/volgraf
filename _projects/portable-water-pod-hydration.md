@@ -5,6 +5,7 @@ summary_tr: "Sarmal silikon pipetli, mıknatıslı ağızlıklı ve dışarı ç
 date: 2025-01-13
 image: /assets/images/case-portable-water-pod.jpg
 category: portfolio
+discipline: product
 tags: [consumer product design, food safe design, anodised aluminium, Tritan copolyester, sealing design, o-ring design, hydration product, product engineering]
 ---
 

@@ -5,6 +5,8 @@ summary_tr: "Üretim ekipmanlarında akış ve termal CFD analizleri: soğutma t
 date: 2026-07-05
 image: /assets/images/case-cfd-flow.jpg
 category: portfolio
+discipline: production
+featured: true
 tags: [CFD analysis, Ansys Fluent, Star-CCM+, thermal analysis, airflow simulation, cyclone separator, powder coating booth, process equipment design]
 ---
 

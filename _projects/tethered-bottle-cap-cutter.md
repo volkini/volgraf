@@ -5,6 +5,7 @@ summary_tr: "AB'de zorunlu olan bağlı şişe kapaklarının plastik bandını 
 date: 2024-10-19
 image: /assets/images/case-bottle-cap-cutter.jpg
 category: portfolio
+discipline: machine
 tags: [consumer product design, cutting mechanism design, injection molding design, EDC tool design, lever mechanism, sustainable product design, DFM, product concept to CAD]
 ---
 

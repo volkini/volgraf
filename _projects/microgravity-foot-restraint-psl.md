@@ -4,6 +4,7 @@ description: "A hands-free boot anchor in a Ø101.6 × 38.1 mm cassette — shie
 summary_tr: "Ø101,6 × 38,1 mm kaset içine sığan, elle kullanım gerektirmeyen bot sabitleme sistemi: helis kamla devreye giren perdelenmiş neodyum dizisi, çift lokmalı döner tabla ve damperli serbest bırakma. Enerji gerektirmez, kaçak manyetik alan yaratmaz."
 date: 2025-11-05
 category: portfolio
+discipline: machine
 tags: [mechanism design, aerospace hardware design, magnetic latch design, cam mechanism, kinematic design, microgravity equipment, LRU modular design, SolidWorks assembly]
 ---
 

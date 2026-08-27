@@ -5,6 +5,7 @@ summary_tr: "Kolla çevrilerek 6×12 ft'ten 7×16 ft'e büyüyen futbol kalesi: 
 date: 2025-01-23
 image: /assets/images/case-expanding-soccer-goal.jpg
 category: portfolio
+discipline: machine
 tags: [mechanism design, telescoping mechanism, ratchet design, sporting goods design, product animation, structural design, CAD visualisation, product development]
 ---
 

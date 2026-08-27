@@ -5,6 +5,7 @@ summary_tr: "Sağlam yapılı toplanabilir köpek tasması: geçmeli plastik gö
 date: 2025-08-09
 image: /assets/images/case-tactical-dog-leash.jpg
 category: portfolio
+discipline: product
 tags: [consumer product design, snap fit housing, pet product design, soft goods engineering, webbing and stitching design, mechanism design, injection molded parts, product development]
 ---
 

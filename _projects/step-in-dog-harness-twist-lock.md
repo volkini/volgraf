@@ -5,6 +5,7 @@ summary_tr: "Evcil hayvan ürünlerine uyarlanan kadranlı kilit mekanizmasıyla
 date: 2025-10-14
 image: /assets/images/case-dog-harness-twistlock.jpg
 category: portfolio
+discipline: machine
 tags: [pet product design, mechanism design, twist lock closure, injection molding design, soft goods engineering, industrial design partner, product renderings, manufacture ready drawings]
 ---
 

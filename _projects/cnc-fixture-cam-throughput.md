@@ -5,6 +5,8 @@ summary_tr: "Darboğaz olan CNC hücresi; yeni bağlama aparatları ve optimize 
 date: 2026-07-20
 image: /assets/images/case-cnc-cell.jpg
 category: portfolio
+discipline: production
+featured: true
 tags: [CNC fixture design, workholding, CAM programming, jig and fixture design, machining throughput, aluminium profile machining, setup reduction]
 ---
 

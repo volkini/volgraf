@@ -5,6 +5,8 @@ summary_tr: "Hazır özel PCB etrafına kurgulanan taşınabilir takip kamerası
 date: 2025-01-24
 image: /assets/images/case-camera-enclosure.jpg
 category: portfolio
+discipline: enclosure
+featured: true
 tags: [electronics enclosure design, PCB packaging, thermal management, 18650 battery pack design, sheet metal enclosure, product design for manufacturing, camera housing design, SolidWorks]
 ---
 

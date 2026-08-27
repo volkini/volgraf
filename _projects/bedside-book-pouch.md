@@ -5,6 +5,7 @@ summary_tr: "Karyola başlığına asılan, kitap ve okuma lambası taşıyan ka
 date: 2025-06-20
 image: /assets/images/case-bedside-book-pouch.jpg
 category: portfolio
+discipline: product
 tags: [soft goods design, product visualisation, leather and fabric product, consumer product design, 3D rendering, concept to CAD, sewing pattern drawing, product development]
 ---
 

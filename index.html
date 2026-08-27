@@ -75,14 +75,21 @@ image: /assets/images/og-partkraft.jpg
         <span class="px-3 py-1.5">DATE {{ site.time | date: "%Y-%m" }}</span>
       </div>
       <div class="flex flex-wrap items-end justify-between gap-3 px-4 py-4">
-        <h2 class="font-display text-2xl font-medium text-white md:text-3xl" data-i18n="home.latest">Latest Projects</h2>
+        <h2 class="font-display text-2xl font-medium text-white md:text-3xl" data-i18n="home.selected">Selected Work</h2>
         <a href="{{ '/projects/' | relative_url }}" class="font-mono text-xs uppercase tracking-[0.18em] text-accent hover:text-white" data-i18n="home.viewAll">All projects →</a>
       </div>
     </header>
 
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {% assign latest = site.projects | sort: "date" | reverse %}
-      {% for p in latest limit: 6 %}
+      {% comment %}
+        Curated six rather than the six most recent: the home page should show
+        the range of work (production engineering, FEA, CFD, fabrication,
+        moulding, electronics), not whatever was finished last. Falls back to
+        the latest six if nothing is flagged.
+      {% endcomment %}
+      {% assign featured = site.projects | where: "featured", true | sort: "date" | reverse %}
+      {% if featured.size == 0 %}{% assign featured = site.projects | sort: "date" | reverse %}{% endif %}
+      {% for p in featured limit: 6 %}
         {% include project-card.html project=p %}
       {% endfor %}
     </div>

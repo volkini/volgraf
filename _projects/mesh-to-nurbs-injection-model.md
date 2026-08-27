@@ -5,6 +5,7 @@ summary_tr: "Poligon mesh modelin, eğim açısı, ayırma çizgisi ve geri kalm
 date: 2025-07-04
 image: /assets/images/case-injection-moulded-vase.jpg
 category: portfolio
+discipline: moulding
 tags: [reverse engineering, mesh to NURBS conversion, STEP file for tooling, injection molding design, draft angle analysis, parting line design, surface modeling, DFM]
 ---
 

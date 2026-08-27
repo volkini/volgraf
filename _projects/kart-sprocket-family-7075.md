@@ -5,6 +5,7 @@ summary_tr: "Tam sayı dişlerle ulaşılamayan aktarma oranları için 67,5 –
 date: 2024-12-30
 image: /assets/images/case-kart-sprockets.jpg
 category: portfolio
+discipline: production
 tags: [sprocket design, gear design, CNC machining design, 7075-T6 aluminium, chain drive engineering, kart racing parts, production drawings, DXF for CNC]
 ---
 

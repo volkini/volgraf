@@ -5,6 +5,7 @@ summary_tr: "Görüntü işlemeli kızartma modülü, baskı prototipinden üret
 date: 2025-03-12
 image: /assets/images/case-smart-toaster-module.jpg
 category: portfolio
+discipline: fabrication
 tags: [sheet metal design, thermal management, computer vision hardware, appliance design, prototype to production, ESP32 enclosure, fabrication drawings, design for manufacturing]
 ---
 

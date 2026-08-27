@@ -5,6 +5,7 @@ summary_tr: "Camı gerçekten kapatan güneşlik: cam şekilleri farklı olsa da
 date: 2024-10-23
 image: /assets/images/case-car-sunshade.jpg
 category: portfolio
+discipline: product
 tags: [automotive accessory design, universal product design, consumer product CAD, product concept design, foldable product, DFM, industrial design, automotive aftermarket]
 ---
 

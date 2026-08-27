@@ -5,6 +5,7 @@ summary_tr: "Mekanizma olarak tasarlanmış bar shaker'ı: silindirik valf, koll
 date: 2026-04-07
 image: /assets/images/case-cocktail-shaker.jpg
 category: portfolio
+discipline: product
 tags: [food safe product design, stainless steel product design, 304 stainless, valve mechanism design, barware design, silicone seal design, consumer product engineering, DFM]
 ---
 

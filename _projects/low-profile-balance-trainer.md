@@ -5,6 +5,7 @@ summary_tr: "Belirleyici kısıtı yükseklik olan zemin seviyesi denge aleti: �
 date: 2024-08-18
 image: /assets/images/case-low-profile-balance-board.jpg
 category: portfolio
+discipline: product
 tags: [fitness product design, low profile design, non-slip design, consumer product CAD, dimensional drawing, imperial units design, product engineering, DFM]
 ---
 

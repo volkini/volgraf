@@ -5,6 +5,7 @@ summary_tr: "Baz eldiven üzerine polikarbonat plakaların ve dökme silikonun n
 date: 2024-07-18
 image: /assets/images/case-tactical-glove-drawing.jpg
 category: portfolio
+discipline: production
 tags: [technical drawing, assembly drawing, overmolding design, silicone casting, protective equipment design, textile product documentation, manufacturing documentation, product design]
 ---
 

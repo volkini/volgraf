@@ -5,6 +5,7 @@ summary_tr: "Kullanıcının altına uzanabilmesi için kızılötesi terapi pan
 date: 2025-10-02
 image: /assets/images/case-red-light-panel-stand.jpg
 category: portfolio
+discipline: product
 tags: [product design, 3D printed product design, stand design, wellness product, bracket design, demountable design, consumer product CAD, design for 3D printing]
 ---
 

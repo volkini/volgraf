@@ -5,6 +5,7 @@ summary_tr: "Sıkma şişeler için üç parçalı dozaj kapağı: döner ölç�
 date: 2025-07-02
 image: /assets/images/case-portion-control-cap.jpg
 category: portfolio
+discipline: moulding
 tags: [injection molding design, closure design, bottle thread standards, valve design, food contact product, patent pending product, DFM, consumer product CAD]
 ---
 

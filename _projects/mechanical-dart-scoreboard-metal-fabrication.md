@@ -5,6 +5,7 @@ summary_tr: "Antika mekanik dart skor tablosu, video ve fotoğraflardan tersine 
 date: 2025-05-23
 image: /assets/images/case-dart-scoreboard.jpg
 category: portfolio
+discipline: machine
 tags: [reverse engineering, mechanism design, gear train design, sheet metal fabrication, machined parts design, technical drawings, vintage machine reproduction, SolidWorks]
 ---
 

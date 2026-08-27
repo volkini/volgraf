@@ -1,5 +1,6 @@
 {% comment %} Reusable project card. Usage: {% include project-card.html project=p %} {% endcomment %}
 <a href="{{ include.project.url | relative_url }}"
+   data-discipline="{{ include.project.discipline }}"
    class="reveal card-hover group block overflow-hidden border border-line bg-panel">
   <div class="relative overflow-hidden border-b border-line">
     {% if include.project.image %}

@@ -5,6 +5,7 @@ summary_tr: "Göz içi basıncı ölçen el tipi cihaz; sabit transdüser, PCB k
 date: 2024-11-22
 image: /assets/images/case-tonometer-housing.jpg
 category: portfolio
+discipline: enclosure
 tags: [medical device design, electronics enclosure, 3D printable housing, transducer packaging, prototype design, ergonomic product design, SolidWorks, design for assembly]
 ---
 

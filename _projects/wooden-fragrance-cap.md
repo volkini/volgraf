@@ -5,6 +5,7 @@ summary_tr: "Tamamen koyu ceviz ağacından, metal parça içermeyen lüks parf�
 date: 2024-08-04
 image: /assets/images/case-wooden-fragrance-cap.jpg
 category: portfolio
+discipline: product
 tags: [luxury packaging design, wooden product design, CNC machining wood, product detailing, texture design, engraving design, technical drawing, consumer product CAD]
 ---
 

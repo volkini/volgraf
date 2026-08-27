@@ -19,10 +19,71 @@ permalink: /projects/
     </div>
   </header>
 
-  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <!-- Discipline filter. Progressive enhancement: without JS every card is
+       already in the DOM and visible; the buttons only hide and show. -->
+  <div class="reveal mb-8 flex flex-wrap gap-2" role="group" aria-label="Filter projects by discipline">
+    <button type="button" data-filter="all" aria-pressed="true"
+            class="filter-btn border border-accent bg-accent px-3 py-2 font-mono text-[11px] uppercase tracking-[0.15em] text-ink transition-colors">
+      <span data-i18n="filter.all">All</span> <span class="opacity-60">{{ site.projects | size }}</span>
+    </button>
+    {% assign disciplines = "product,machine,production,moulding,enclosure,fabrication" | split: "," %}
+    {% for d in disciplines %}
+      {% assign items = site.projects | where: "discipline", d %}
+      {% if items.size > 0 %}
+      <button type="button" data-filter="{{ d }}" aria-pressed="false"
+              class="filter-btn border border-line px-3 py-2 font-mono text-[11px] uppercase tracking-[0.15em] text-body transition-colors hover:border-accent hover:text-accent">
+        <span data-i18n="filter.{{ d }}">{{ d }}</span> <span class="opacity-60">{{ items.size }}</span>
+      </button>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="project-grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
     {% assign all = site.projects | sort: "date" | reverse %}
     {% for p in all %}
       {% include project-card.html project=p %}
     {% endfor %}
   </div>
+
+  <p id="filter-empty" class="hidden py-10 text-center font-mono text-sm text-faint" data-i18n="filter.none">
+    No projects in this category yet.
+  </p>
 </section>
+
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('#project-grid > a');
+  var empty = document.getElementById('filter-empty');
+  if (!buttons.length || !cards.length) return;
+
+  function select(value) {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var match = value === 'all' || card.dataset.discipline === value;
+      card.classList.toggle('hidden', !match);
+      if (match) { shown++; card.classList.add('is-visible'); }
+    });
+    buttons.forEach(function (btn) {
+      var active = btn.dataset.filter === value;
+      btn.setAttribute('aria-pressed', String(active));
+      btn.classList.toggle('bg-accent', active);
+      btn.classList.toggle('border-accent', active);
+      btn.classList.toggle('text-ink', active);
+      btn.classList.toggle('border-line', !active);
+      btn.classList.toggle('text-body', !active);
+    });
+    empty.classList.toggle('hidden', shown > 0);
+    // Keep the choice in the URL so a filtered view can be linked and shared.
+    var url = value === 'all' ? location.pathname : location.pathname + '?f=' + value;
+    history.replaceState(null, '', url);
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () { select(btn.dataset.filter); });
+  });
+
+  var initial = new URLSearchParams(location.search).get('f');
+  if (initial && document.querySelector('.filter-btn[data-filter="' + initial + '"]')) select(initial);
+})();
+</script>

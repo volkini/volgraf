@@ -5,6 +5,7 @@ summary_tr: "Piyasadaki bir olta aparatının, başparmakla itme yerine zımba b
 date: 2026-01-13
 image: /assets/images/case-fishing-hook-tool.jpg
 category: portfolio
+discipline: machine
 tags: [mechanism design, consumer product redesign, lever mechanism, fishing tackle design, injection molding design, ergonomic redesign, concept design, product development]
 ---
 

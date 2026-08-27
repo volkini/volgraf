@@ -5,6 +5,7 @@ summary_tr: "Altı dilimden sekiz dilime çıkarılan genişleyen kasnak mekaniz
 date: 2024-10-23
 image: /assets/images/case-pizza-divider.jpg
 category: portfolio
+discipline: machine
 tags: [mechanism design, expanding pulley mechanism, 3D printable design, kitchen product design, kinematic design, parametric CAD, consumer product, STL deliverable]
 ---
 

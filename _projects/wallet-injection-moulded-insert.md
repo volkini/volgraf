@@ -5,6 +5,8 @@ summary_tr: "İnce deri cüzdana entegre takip cihazı bölmesi: canlı menteşe
 date: 2026-03-20
 image: /assets/images/case-wallet-insert.jpg
 category: portfolio
+discipline: moulding
+featured: true
 tags: [injection molding design, snap fit design, living hinge alternative, ABS part design, DFM consumer product, wall thickness optimization, leather goods technical drawing, STEP file for tooling]
 ---
 

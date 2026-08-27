@@ -5,6 +5,7 @@ summary_tr: "Alüminyum profil şasi üzerine kurulu iki eksenli hızlı takip p
 date: 2025-09-12
 image: /assets/images/case-servo-tracking-rig.jpg
 category: portfolio
+discipline: machine
 tags: [motion control hardware, servo drive design, gear train design, aluminium extrusion frame, pneumatic actuator integration, mechatronics design, machine design, SolidWorks assembly]
 ---
 

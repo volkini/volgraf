@@ -5,6 +5,7 @@ summary_tr: "Hava akışı ve devrilme dayanımı üzerine kurgulanan masaüstü
 date: 2024-07-23
 image: /assets/images/case-laptop-stand.jpg
 category: portfolio
+discipline: product
 tags: [product design, laptop stand design, ergonomic design, ventilation design, sheet metal and plastic parts, consumer product CAD, production drawings, DFM]
 ---
 

@@ -5,6 +5,7 @@ summary_tr: "Golf çantası dikilmiş bir form olarak değil, taşıyıcı yapı
 date: 2025-10-19
 image: /assets/images/case-golf-bag.jpg
 category: portfolio
+discipline: product
 tags: [consumer product design, sporting goods design, product structure design, textile product engineering, production drawings, industrial design CAD, injection molded frame, DFM]
 ---
 

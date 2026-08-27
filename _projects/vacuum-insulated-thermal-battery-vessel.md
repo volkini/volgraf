@@ -5,6 +5,8 @@ summary_tr: "Isı borulu ve faz değiştiren malzemeli termal depolama sistemi i
 date: 2025-07-03
 image: /assets/images/case-vacuum-thermal-vessel.jpg
 category: portfolio
+discipline: fabrication
+featured: true
 tags: [pressure vessel design, vacuum insulated vessel, stainless steel fabrication, heat pipe design, thermal energy storage, PCM thermal battery, SolidWorks CAD, weldment design]
 ---
 

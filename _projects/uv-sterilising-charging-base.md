@@ -5,6 +5,7 @@ summary_tr: "Kendi güç bankasını sterilize eden masaüstü şarj ünitesi: s
 date: 2024-09-16
 image: /assets/images/case-uv-charging-base.jpg
 category: portfolio
+discipline: enclosure
 tags: [consumer electronics design, wireless charging design, product enclosure design, UV sterilisation device, injection molding design, industrial design CAD, power bank design, DFM]
 ---
 

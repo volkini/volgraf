@@ -5,6 +5,7 @@ summary_tr: "Kulak kanalı ile elmacık kemiği arasında köprü kuran, kulakl�
 date: 2024-09-02
 image: /assets/images/case-bone-conduction-earpiece.jpg
 category: portfolio
+discipline: enclosure
 tags: [wearable device design, ergonomic product design, adjustable mechanism, hinge design, medical wearable, product design CAD, prototype design, human factors]
 ---
 

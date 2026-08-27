@@ -5,6 +5,8 @@ summary_tr: "Pres kalıbı bileşenlerindeki tekrarlayan yorulma çatlakları ha
 date: 2026-07-12
 image: /assets/images/case-press-die-fea.jpg
 category: portfolio
+discipline: production
+featured: true
 tags: [press die design, FEA fatigue analysis, Ansys, stamping die, tooling design, tool life, DFM, metal forming]
 ---
 

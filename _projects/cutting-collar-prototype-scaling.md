@@ -5,6 +5,7 @@ summary_tr: "Seri üretim için 1 mm, prototip için 2 mm et kalınlığında ç
 date: 2025-04-01
 image: /assets/images/case-shoulder-collar.jpg
 category: portfolio
+discipline: moulding
 tags: [injection molding design, wall thickness design, prototype vs production, parametric CAD, technical drawings, consumer product design, DFM, design revision management]
 ---
 

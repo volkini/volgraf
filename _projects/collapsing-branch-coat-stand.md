@@ -5,6 +5,7 @@ summary_tr: "Yük altında dalları aşağı katlanan heykelsi palmiye portmanto
 date: 2024-11-10
 image: /assets/images/case-collapsing-coat-hanger.jpg
 category: portfolio
+discipline: machine
 tags: [furniture design, mechanism design, decorative product design, folding mechanism, product design CAD, home product design, technical drawings, concept development]
 ---
 

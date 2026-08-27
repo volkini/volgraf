@@ -5,6 +5,7 @@ summary_tr: "Kompakt kutu içecek otomatı: asıl sorun kutuların kanalda sık�
 date: 2025-01-10
 image: /assets/images/case-wall-vending-machine.jpg
 category: portfolio
+discipline: machine
 tags: [vending machine design, sheet metal enclosure, mechanism design, gravity feed system, stepper motor drive, machine design, DFM, production drawings]
 ---
 

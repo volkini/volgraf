@@ -5,6 +5,7 @@ summary_tr: "Kelepçe bağlantılı kompakt makaslı kaldırma mekanizması: kol
 date: 2024-09-20
 image: /assets/images/case-lifter-mechanism.jpg
 category: portfolio
+discipline: machine
 tags: [mechanism design, scissor lift design, linkage design, machine element design, production drawings, SolidWorks assembly, clamp design, mechanical design services]
 ---
 

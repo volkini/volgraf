@@ -5,6 +5,7 @@ summary_tr: "Her zaman açık duran patentli aydınlatmalı bayrak: LED çubuğu
 date: 2024-08-20
 image: /assets/images/case-illuminated-flag.jpg
 category: portfolio
+discipline: fabrication
 tags: [product design, LED housing design, aluminium extrusion design, outdoor product engineering, bracket design, assembly design, production drawings, patented product development]
 ---
 

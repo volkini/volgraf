@@ -5,6 +5,7 @@ summary_tr: "Şantiyede geçici kullanılan havalandırmalı kanal kapağı; yü
 date: 2025-10-09
 image: /assets/images/case-ventilated-access-cover.jpg
 category: portfolio
+discipline: fabrication
 tags: [BS EN 124 compliance, manhole cover design, sheet metal design, load bearing cover, ventilated duct lid, civil infrastructure hardware, technical drawings for fabrication, mild steel design]
 ---
 

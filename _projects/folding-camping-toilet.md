@@ -5,6 +5,7 @@ summary_tr: "Kompakt katlanabilir kamp tuvaleti: eksik olan ayrıştırma işlev
 date: 2024-04-27
 image: /assets/images/case-folding-camping-toilet.jpg
 category: portfolio
+discipline: product
 tags: [outdoor product design, folding product design, injection molding design, camping equipment, functional insert design, product improvement, DFM, consumer product CAD]
 ---
 

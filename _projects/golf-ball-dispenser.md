@@ -5,6 +5,7 @@ summary_tr: "Yaylı besleme kolonu ve tek butonla çalışan kompakt golf topu d
 date: 2024-06-16
 image: /assets/images/case-golf-ball-dispenser.jpg
 category: portfolio
+discipline: machine
 tags: [mechanism design, dispenser design, spring mechanism, injection molding design, sporting goods design, production drawings, consumer product CAD, DFM]
 ---
 

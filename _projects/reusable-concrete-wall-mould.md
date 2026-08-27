@@ -5,6 +5,7 @@ summary_tr: "İthal ICF blok yerine yerinde üretilebilecek PVC esaslı beton du
 date: 2024-06-19
 image: /assets/images/case-concrete-wall-mould.jpg
 category: portfolio
+discipline: production
 tags: [construction product design, concrete formwork design, ICF alternative, PVC extrusion design, CNC machining design, cost driven design, building system design, DFM]
 ---
 

@@ -5,6 +5,7 @@ summary_tr: "50+ otomotiv projesi için kontrol planları, PFMEA, MSA çalışma
 date: 2026-06-28
 image: /assets/images/case-ppap-tooling.jpg
 category: portfolio
+discipline: production
 tags: [PPAP documentation, APQP, PFMEA, control plan, IATF 16949, VDA, MSA study, automotive supplier, quality documentation]
 ---
 
