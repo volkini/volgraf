@@ -10,11 +10,12 @@ Claude'dan bu dosyayı okuması istenir — kaldığın yerden devam etmenin yol
 
 ---
 
-## GUNCEL YAPILACAKLAR — son guncelleme: 6 Agustos 2026
+## GUNCEL YAPILACAKLAR — son guncelleme: 28 Agustos 2026
 
-> ⚡ **ACIL NAKIT MODU ACIK.** Gelir kaynagi batti. Site isleri artik ikinci
-> oncelikte — birinci oncelik gelir plani FAZ 0 (Fikirler reposu:
-> `adim-adim.md` -> FAZ 0). Buradaki 1. madde hala en kritik site isi.
+> **Acil nakit modu KAPANDI** (25 Agu, Fikirler reposu `finansal-durum.md`).
+> Teshis yanlismis: duzenli is ve birikim yerinde, nakit sikisikligi yok.
+> Plan uzun vadeli deger eksenine dondu — site ve hesap aceleye getirilmeden,
+> dogru yapilarak buyutulecek.
 
 Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 
@@ -609,3 +610,44 @@ arsiv hem yayin kaynagi olur.
 3. Sozlesmedeki ek is maddesi hala kontrol edilmedi. Instagram siteden cok daha
    gorunur; hesap "portfolyo vitrini" tonunda tutuluyor, acik hizmet reklami
    YAPILMIYOR - bu bilincli.
+
+---
+
+## Oturum: 28 Agustos 2026 (2. bolum) - INSTAGRAM PARTI 1 + REPO DUZENI
+
+### Instagram parti 1 hazir (4 karusel, 22 kare)
+Ilk uretimde her karuselde tek render kullanmistim; Volkan hakli olarak
+"klasorde daha iyi render'lar var" dedi. Sablona **`photo()` slayti** eklendi ve
+01 ile 03 yeniden kuruldu:
+- 01: kapak artik ici goruken render, ayrica bobin/isi borusu ve **patlatilmis
+  gorunus** kareleri eklendi (6 kare).
+- 03: **kenar gorunusu** (10 mm kalinligi gosteriyor) ve mentese render'i
+  eklendi (6 kare).
+Skill'e kural yazildi: her proje klasorunde 5-15 gorunus var, kapali dis
+gorunusle yetinen karusel arsivi ziyan eder; en iyi kare genelde son numarali
+olanlar (patlatilmis/kesit gorunusler en son istenir).
+
+### Repo duzeni — ONEMLI
+Claude skill'leri `~/.claude/skills/` altinda yasar ve **git ile senkronlanmaz.**
+Diger bilgisayarda calisabilmek icin **gizli** `fikirler` reposuna kondu:
+- `claude-skills/social-media-manager/` — skill'in tam kopyasi + fontlar
+- `claude-skills/README.md` — diger makineye kurulum komutu
+- `instagram/parti-01/` — 22 kare + KAPAKLAR.md
+- `.gitignore`'a `claude-skills/**/config.json` eklendi (token asla commit edilmez)
+
+**Is bilgisayarinda once sunu yap:**
+```
+cd Fikirler && git pull
+cp -r claude-skills/social-media-manager ~/.claude/skills/
+```
+Yoksa "yeni parti hazirla" dedigin Claude skill'i bulamaz.
+
+Bunlar bilerek public volgraf reposuna konmadi — site reposu herkese acik.
+
+### Instagram profil metinleri (yazildi, uygulanmayi bekliyor)
+- Ad alani (aramada taranir): `PartKraft | Mechanical Design`
+- Bio: "Mechanical design engineer / Case files from real projects — and shop
+  notes on why parts fail / Tooling · moulding · FEA/CFD"
+- Link: partkraft.com (+ istege bagli LinkedIn)
+- Kategori: Engineering Service. E-posta butonu: volkini@gmail.com
+- Bio'da "freelance musait" YAZILMADI — sozlesme maddesi hala acik.
