@@ -18,8 +18,15 @@ author:
 whatsapp: "905435209120"
 whatsapp_message: "Hi Volkan, I saw your PartKraft site and..."
 
-# Quote form + direct contact email (form submissions arrive here via formsubmit.co)
+# Direct contact address, shown as a mailto link on the contact page.
 email: volkini@gmail.com
+
+# FormSubmit endpoint token for the quote form. This is the alias FormSubmit
+# issues after activation — using it keeps the email address out of the page
+# source, where spam bots harvest it. It is public by design.
+# To point the form at a different address: activate that address at
+# formsubmit.co, then replace the token below.
+formsubmit_token: "19607a456c30216cacd2228b7ecd9cf6"
 
 # Social profiles — leave empty ("") to hide the link in the footer.
 social:

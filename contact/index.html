@@ -22,11 +22,12 @@ permalink: /contact/
 
   <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
     <!-- ============ FORM ============
-         Submissions are emailed to site.email via formsubmit.co (free, no account).
-         NOTE: the FIRST submission triggers an activation email to that address —
-         click "Activate" in it once and the form is live forever.
-         To change the destination address, edit `email:` in _config.yml. -->
-    <form action="https://formsubmit.co/{{ site.email }}" method="POST" class="reveal flex flex-col gap-5 md:col-span-2">
+         Submissions are emailed via formsubmit.co (free, no account). The form
+         was activated on 21 Aug 2026 and posts to the token endpoint rather than
+         to a naked address, so the email stays out of the page source.
+         To change the destination: activate the new address at formsubmit.co and
+         put its token in `formsubmit_token:` in _config.yml. -->
+    <form action="https://formsubmit.co/{{ site.formsubmit_token }}" method="POST" class="reveal flex flex-col gap-5 md:col-span-2">
       <input type="hidden" name="_subject" value="New quote request — PartKraft" />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_next" value="{{ '/thanks/' | absolute_url }}" />
