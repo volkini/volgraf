@@ -18,10 +18,10 @@ Claude'dan bu dosyayı okuması istenir — kaldığın yerden devam etmenin yol
 
 Sirali liste; ustteki once. (V) = Volkan yapacak, (C) = Claude yapacak.
 
-- [ ] 1. (V) **Form aktivasyonu**: /contact/ sayfasindan deneme gonderisi yap,
-      volkini@gmail.com'a gelen formsubmit.co mailinde "Activate"e tikla.
-      Yapilmazsa musteri mesajlari ulasmaz. **ACIL MODDA KRITIK** — doğrudan
-      erisim kampanyasi site linkini paylasacak, form calismiyor olamaz.
+- [x] 1. TAMAM (21 Agu) — **teklif formu aktive edildi**, mesajlar artik
+      volkini@gmail.com'a dusuyor. KALAN kucuk is: formsubmit'in verdigi
+      rastgele kodu (formsubmit.co/<kod>) form action'ina koyup e-posta
+      adresini sayfa kaynagindan kaldirmak (spam botlarina karsi).
 - [ ] 2. (V) YouTube hesabi: @partkraft henuz alinmadi; Volkan mevcut premium
       "volkini" hesabini kullanmayi dusunuyor (karar bekliyor). Instagram
       @partkraft ALINDI (16 Tem).
@@ -487,3 +487,26 @@ de hicbir yerde yok - Volkan'in talimati.
   skeleton, cancelled, Wireless charge'in ayri klasoru).
 - Portfolyo slaytlarindan: sayfa-09 (cift kafali capak alma makinesi) ve
   sayfa-22 (denizalti kablo/boru ROV) ayri vaka olabilir.
+
+---
+
+## Oturum: 21 Agustos 2026 (ev, gece) - LINKEDIN GORUNUR + FORM AKTIF
+
+- LinkedIn (https://www.linkedin.com/in/vorion) zaten _config.yml'de kayitliydi ama
+  SADECE footer'da soluk yazi olarak duruyordu. Artik gorunur iki yerde daha var:
+  /about/ sayfasinda ismin altinda ikonlu buton, /contact/ sayfasinda "Who you're
+  hiring" karti. EN/TR ceviriler eklendi (about.linkedin, quote.who, quote.linkedin).
+- **Teklif formu AKTIVE EDILDI** (Volkan yapti). Mesajlar volkini@gmail.com'a gidiyor.
+- Bekleyen: formsubmit rastgele kodu ile e-posta adresini sayfa kaynagindan kaldirmak.
+
+### Site degerlendirmesi (dururum tespiti, 21 Agu)
+Guclu: 47 vaka + gercek muhendislik detayi, hizli (200 ms / 35-100 KB), HTTPS,
+sitemap 54 adres, JSON-LD + FAQ semasi, gorseller optimize.
+Zayif (onem sirasi): (1) guven sinyali eksikligi - profil fotografi hala yok,
+musteri yorumu/logo yok; (2) 47 vaka duz liste halinde, kategori filtresi yok,
+ziyaretci neyde iyi oldugunu cikaramiyor; (3) dil karisik - TR modunda menu
+Turkce, govde Ingilizce (ozellikle /about/ biyografisi); (4) vaka metinleri
+ayni sablonda, 47 tanede sablon gorunur oluyor; (5) render'lar hep ayni gri
+SolidWorks studyo gorunumu; (6) fiyat/sure cipasi yok; (7) proje sayfalarinda
+DWG numarasi slug'dan kesiliyor ("DWG NO. MICROGRAVITY-F") - estetigi bozuyor;
+(8) Tailwind CDN'den yukleniyor (Lighthouse puani).
