@@ -4,10 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO: title, description, canonical, Open Graph, Twitter cards,
-       JSON-LD — generated from _config.yml and page front matter. -->
-  {% seo %}
+  <!-- SEO: description, canonical, Open Graph, Twitter cards, JSON-LD —
+       generated from _config.yml and page front matter.
+       title=false so we set <title> ourselves: jekyll-seo-tag would append
+       "| PartKraft" to every page, spending 12 characters of the ~60 Google
+       displays on a brand nobody is searching for yet. Only the home page
+       carries the brand. -->
+  {% seo title=false %}
+  <title>{% if page.url == "/" %}PartKraft — Mechanical Design &amp; CAD Services{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   {% if page.tags and page.tags != empty %}<meta name="keywords" content="{{ page.tags | join: ', ' }}" />{% endif %}
+  {% if page.noindex %}<meta name="robots" content="noindex, follow" />{% endif %}
 
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}" />
 
